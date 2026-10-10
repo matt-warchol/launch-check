@@ -16,6 +16,7 @@ Use for a new landing page or a launch of an existing one. Keep the existing bra
 - [ ] Keep microanimations subtle, honor reduced motion, and ensure content remains visible if animation scripts fail.
 - [ ] Test the primary contact/booking/form path, brand link to home, navigation, downloads, and interactive examples. Distinguish a CTA click from an actual delivered lead or booking. Avoid sending real messages as a casual test without authorization.
 - [ ] Verify metadata, canonical URLs, sitemap, robots, social image, real 404s, and applicable structured data using the linked SEO guidance. Check publicly served output as well as source files.
+- [ ] When GA4 is selected, use [the Google Analytics module](google-analytics.md) to reuse/create its property and stream, add tagging and agreed events, and verify actual receipt.
 - [ ] Verify privacy and measurement behavior in proportion to the actual integrations. An installed analytics package or enabled dashboard is not evidence of event delivery.
 
 ## Release

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0 — 2026-10-10
+
+- Added optional GA4 autopilot guidance for authorized property/web-stream setup, tagging, consent, events, and verified receipt.
+- Added bullet-point checklists describing every mode and GA4 chat examples.
+- Added analytics evidence fields, access-aware fallback, current Google documentation, and required resource validation.
+
 ## Documentation update — 2026-10-10
 
 - Added chat commands, mode selection, concrete inputs, and expected outputs for all five modes.

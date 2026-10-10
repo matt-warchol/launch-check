@@ -1,8 +1,8 @@
 ---
 name: launch-check
-description: Build and launch landing pages, research SEO, and audit website launch readiness, including accessibility, SSL/TLS, privacy, analytics, and Is Agentic checks. Use for landing-page builds, launch audits, authorized fixes, and deployment; not for unrelated app development or standalone legal/security audits.
+description: Build and launch landing pages, research SEO, and audit website launch readiness, including accessibility, SSL/TLS, privacy, GA4 setup, analytics verification, and Is Agentic checks. Use for landing-page builds, launch audits, authorized fixes, and deployment; not for unrelated app development or standalone legal/security audits.
 metadata:
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # Launch Check
@@ -24,6 +24,10 @@ Infer the mode from the request. A single new page does not require a rebrand or
 Read [the landing-page checklist](references/landing-page.md) for landing-page builds and launches. It adds brief, copy, trust, readability, conversion, release, and public verification checks to the existing SEO and launch guidance. Preserve an existing site's visual design unless redesign is requested. Research depth and page count follow the user's scope.
 
 Include the [Is Agentic workflow](references/is-agentic.md) in landing-page launch verification, or when agent-readiness checks are requested: `npx is-agentic <domain>`. Run it against the canonical public site, record timestamp and evidence, and distinguish a cached report from a post-release scan. Apply relevant findings within authorization; do not build nonexistent APIs to raise a score. An audit-only request does not authorize fixes or deployment.
+
+## Google Analytics setup
+
+When GA4 is requested, read [the Google Analytics module](references/google-analytics.md). Inspect existing tags and account access, reuse or create the correct property/web stream within authorization, install the tag and agreed events, and verify consent behavior and actual receipt. Use autopilot only with usable permissions; without account access, request an existing public measurement ID and keep property setup/report receipt pending. Do not add GA4 merely because this module exists.
 
 ## Preflight capabilities before doing work
 

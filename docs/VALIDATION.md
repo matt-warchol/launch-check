@@ -1,5 +1,14 @@
 # Validation record
 
+## 1.3.0 update — 2026-10-10
+
+- Package/resource/link validator: PASS. Skill-creator frontmatter validator: PASS. Whitespace validation: PASS.
+- Added required-resource validation for the GA4 module; missing-resource negative fixture rejected.
+- Manual scenario review: existing tags and properties are reused; ambiguous account selection needs a choice; write access is distinct from reporting access; a public measurement ID cannot provision accounts or prove receipt; creation timeouts require reconciliation before retry; CTA clicks are not completed leads; consent state and event duplication need browser verification; missing access blocks only dependent setup; GA4 remains optional.
+- Google primary documentation checked for property/web-stream creation, OAuth scope, website tagging, consent behavior, and event troubleshooting.
+- Actual access preflight found no connected Analytics tool. Attempt to open Analytics through the browser was blocked because the required security policy could not be verified. No bypass was attempted, no GA4 property/stream was created, and no live event receipt was established. This record validates the instruction package, not a working Google integration.
+
+
 ## 1.2.0 update — 2026-10-10
 
 Scope: landing-page workflow, Is Agentic integration, public verification, and launch usage documentation. The earlier 1.1.0 record below remains historical.

@@ -63,6 +63,16 @@ Priorities: **P0** immediate exposure or critical failure; **P1** launch-blockin
 
 Keep the founder-facing response to the decision summary and the highest-priority bullets. Put exhaustive evidence, source URLs, query tables, and low-priority notes in an appendix or separate saved report. Keep trademark/name notes to 2–3 lines unless a deeper review was requested.
 
+## Google Analytics evidence (when selected)
+
+- Selected account/property/stream and public measurement ID: [fill; no secrets]
+- Created or reused resources; access/permission limits: [fill]
+- Tag path, event names and meanings, key-event choices: [fill]
+- Consent behavior and preview/production separation: [fill]
+- Installed / collection requests verified / GA4 receipt verified: [separate status and evidence]
+- Browser/account checks unavailable and exact owner test: [fill]
+- Disable/rollback route: [fill]
+
 ## Is Agentic evidence (landing-page launches or requested audits)
 
 - Public target, command, execution date, CLI version when available: [fill]

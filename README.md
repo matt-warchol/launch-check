@@ -2,7 +2,7 @@
 
 An instruction-based Agent Skill for building landing pages, researching search demand, auditing technical SEO, and verifying website launches, including Is Agentic readiness.
 
-**Version:** 1.2.0 · **Reviewed:** 2026-10-10 · **Distribution:** portable skill folder and GitHub-ready source repository.
+**Version:** 1.3.0 · **Reviewed:** 2026-10-10 · **Distribution:** portable skill folder and GitHub-ready source repository.
 
 The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, API key, MCP server, or runtime script.
 
@@ -29,6 +29,45 @@ There are no terminal commands such as `launch-check audit` or `launch-check --m
 You can use one mode on its own or combine them. You do not need to run research before every build. A practical sequence is **Build → Audit → Implement → Launch**; add Research when you need audience/search planning. Launch can also prepare a release without publishing: say “Prepare the launch handoff; do not push or deploy.”
 
 In another Agent Skills host, use that host's skill-selection convention and the same instructions. A regular chat can read these instructions, but that alone does not install an automatically discoverable skill.
+
+## What each mode checks
+
+### Build landing page
+
+- Turns the audience, benefit, differentiator, and main action into a clear page.
+- Uses approved proof/photos, readable mobile layouts, accessible controls, and subtle motion.
+- Adds essential SEO and social previews; prepares a preview and relevant tests.
+
+### Research
+
+- Investigates audience questions, search intent, competitors, and useful content opportunities.
+- Groups queries into page briefs with titles, headings, conversion actions, and internal links.
+- Records source/market/date and labels missing demand data; naming/domain research is optional.
+
+### Audit
+
+- Checks readability, navigation, conversion paths, accessibility, HTML, and status codes.
+- Reviews canonical URLs, sitemap/robots, metadata, social images, and applicable structured data.
+- Checks HTTPS, privacy/tracking, and Is Agentic when in scope; ranks findings with evidence.
+
+### Implement
+
+- Applies the specified audit fixes while preserving existing design and behavior.
+- Updates relevant copy, code, metadata, agent files, or selected analytics setup.
+- Adds meaningful regression coverage and verifies changed behavior; publishing is separate.
+
+### Launch
+
+- Verifies the correct repository, branch, hosting project, build settings, and rollback route.
+- Pushes/deploys when authorized; checks DNS, HTTPS, production conversion paths, and public resources.
+- Runs Is Agentic, checks report freshness, verifies analytics when selected, and gives an owner handoff.
+
+### Optional Google Analytics module
+
+- Adds the website to your selected GA4 account: reuses or creates the property and web stream.
+- Installs the tag, page views, and agreed action events without duplicate tracking.
+- Checks consent behavior and confirms data in Realtime/DebugView when access permits.
+- Runs automatically after authorization when account/code access is available; otherwise gives the exact setup step or requests an existing `G-…` measurement ID.
 
 ## Copy-paste examples for every mode
 
@@ -135,6 +174,7 @@ skills/launch-check/
   references/launch.md        Privacy, security, telemetry, release
   references/landing-page.md  Build-to-production checklist
   references/is-agentic.md    CLI audit, freshness, fixes, verification
+  references/google-analytics.md GA4 setup, consent, events, verification
   assets/report-template.md   Reusable evidence and handoff template
 README.md                     Installation and use
 docs/LAUNCH-A-WEBSITE.md      Step-by-step landing-page usage
@@ -147,6 +187,34 @@ LICENSE-NOTICE.md             Licensing status
 ```
 
 Read [the review](docs/REVIEW.md) for what changed, [validation](docs/VALIDATION.md) for the evidence behind readiness, and [publishing](docs/PUBLISHING.md) before distribution. Source links for SEO and launch guidance are kept with the relevant skill references.
+
+## Google Analytics on autopilot
+
+**Paste into agent chat** when you want GA4 set up as part of implementation or launch:
+
+```text
+$launch-check set up Google Analytics 4 for https://[domain].
+Use [Analytics account/property]. Reuse the correct property and web
+stream, or create them if missing. For a new property use [name],
+[reporting time zone], and [currency]. Install the tag and track page
+views and the primary contact/booking action without duplicate events.
+Use the existing consent setup or identify what must be added.
+Verify actual receipt in Realtime/DebugView. You may create the
+required property/stream and push/deploy the agreed website changes.
+If access is unavailable, tell me the exact missing setup.
+```
+
+Autopilot needs authenticated Google Analytics access with the required permissions, plus repository/hosting access. It cannot create resources or confirm report receipt from a measurement ID alone. The skill can use a supported Admin API connection or authorized browser UI; it does not bundle a Google connection or a magic one-command installer.
+
+If you already have a web stream and want only the website integration:
+
+```text
+$launch-check add GA4 measurement ID [G-…] to this website.
+Track page views and contact clicks, respect the applicable consent
+setup, and prepare a tested preview. Do not push or deploy yet.
+```
+
+Read the [Google Analytics checklist](skills/launch-check/references/google-analytics.md) for setup, events, privacy, verification, and manual fallback steps.
 
 ## Is Agentic check
 

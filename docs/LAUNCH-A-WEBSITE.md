@@ -1,6 +1,6 @@
 # How to launch a website with Launch Check
 
-Version 1.2.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
+Version 1.3.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
 
 ## Choose a mode and where to type it
 
@@ -71,6 +71,14 @@ Replace the example domain. Reports are public; use only public URLs. The [Is Ag
 Work through applicable Essential failures first, then partial checks and Recommended findings. Do not create fictitious developer interfaces, addresses, testimonials, or policy facts just to improve a score. Follow current file formats and verify each public endpoint changed.
 
 The CLI can return a report from before your deployment. Record `scanned_at` and compare it with release time; a second invocation may still return the same report. A stale score stays a baseline until a newer scan exists. Use direct production checks for immediate evidence and the service's supported rescan flow for a fresh report; do not claim a score improvement without one.
+
+## Optional: set up Google Analytics automatically
+
+Ask for the [GA4 autopilot workflow in the README](../README.md#google-analytics-on-autopilot). It works within Implement or Launch mode when you select Google Analytics; it is not mandatory for every website.
+
+Supply the selected Analytics account/property, canonical URL, and event goals. For a new property, also supply the name, reporting time zone, and currency. Authorize property/stream creation and website deployment if you want the full setup. With account access, the agent checks for duplicates, reuses or creates the correct property/web stream, retrieves the measurement ID, adds tagging, and verifies events and consent.
+
+If account access is unavailable, follow the [manual fallback](../skills/launch-check/references/google-analytics.md#manual-fallback-for-the-owner) and share the public `G-…` ID. Never share passwords, keys, or OAuth tokens in chat. Tag installation and property receipt are reported separately; a browser/network block must remain explicit.
 
 ## 6. Get a launch handoff
 

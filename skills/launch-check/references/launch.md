@@ -24,6 +24,8 @@ For GDPR/UK GDPR and ePrivacy-style cookie reviews, explicitly inventory cookies
 
 ## Analytics and error reporting
 
+When the user selects GA4, use [the Google Analytics module](google-analytics.md) for authorized account/property/stream setup, website tagging, consent, events, and receipt verification.
+
 Use the user's existing or selected provider. Define the success action, event name, trigger, minimal properties, consent category, and how to verify it. Distinguish CTA clicks from completed outcomes. Test event delivery, duplication on retries/navigation, and sensitive data exposure. Public measurement IDs are different from secret administrative/server credentials.
 
 Inspect URLs, query strings, payloads, logs, and session replay for personal data leakage. Set retention and access according to actual needs. Check basic error reporting and alert ownership for applications that need them. A missing analytics account may remain unverified without blocking a static page launch; explain the consequence rather than inventing configuration.
