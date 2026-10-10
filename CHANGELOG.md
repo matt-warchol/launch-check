@@ -1,5 +1,9 @@
 # Changelog
 
+## Launch-prompt reminder — 2026-10-10
+
+- Included GA4 setup and receipt verification directly in the example launch prompt so analytics is not forgotten; other providers remain supported.
+
 ## 1.3.0 — 2026-10-10
 
 - Added optional GA4 autopilot guidance for authorized property/web-stream setup, tagging, consent, events, and verified receipt.

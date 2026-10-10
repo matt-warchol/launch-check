@@ -151,11 +151,17 @@ $launch-check launch the agreed landing-page changes.
 Push to [GitHub repository] on [branch] and deploy to [hosting project]
 at https://[public domain]. Verify the build, deployment version,
 DNS, HTTPS, main conversion path, metadata, sitemap, and public assets.
+Set up GA4 in [Analytics account/property], reusing its web stream or
+creating it if missing. For a new property use [reporting time zone]
+and [currency]. Install page-view and primary-action tracking, respect
+consent, and verify actual event receipt.
 Run npx is-agentic [public domain], check report freshness, and fix
 applicable issues within the agreed landing-page scope.
 Give me the live URL, Git commit, verification results, remaining
 owner actions, and rollback route.
 ```
+
+Change or omit the GA4 lines if you already use another analytics provider. Keep an explicit analytics check in your brief so measurement is not forgotten.
 
 **You get:** a verified public release when access and authorization permit it, plus a concise handoff. Missing account or DNS access is reported with the exact pending action; a local build alone is not a completed launch.
 

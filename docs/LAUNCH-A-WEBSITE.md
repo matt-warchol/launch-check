@@ -47,6 +47,9 @@ Push the agreed changes to [repository/branch] and deploy to
 [hosting project] at [public domain]. Verify DNS, HTTPS, the deployed
 version, and the main conversion path. Run the Is Agentic check and
 fix applicable issues within the agreed landing-page scope.
+Set up Google Analytics in [account/property] if selected; install
+page-view and primary-action tracking and verify receipt. For a new
+property use [time zone] and [currency].
 ```
 
 Existing authorization does not need to be repeated. If the registrar or account requires your action, the agent should give the exact pending setup and continue independent work. A DNS record alone does not prove a working certificate or correct production site.
