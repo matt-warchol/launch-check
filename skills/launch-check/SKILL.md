@@ -1,8 +1,8 @@
 ---
 name: launch-check
-description: Research SEO and check web application launch readiness, including technical SEO, accessibility, SSL/TLS, GDPR/cookies, security, analytics, and release verification. Use for launch audits, prelaunch research, or authorized fixes; not for unrelated app development or standalone legal/security audits.
+description: Build and launch landing pages, research SEO, and audit website launch readiness, including accessibility, SSL/TLS, privacy, analytics, and Is Agentic checks. Use for landing-page builds, launch audits, authorized fixes, and deployment; not for unrelated app development or standalone legal/security audits.
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Launch Check
@@ -11,6 +11,7 @@ Turn a product brief or existing website into an evidence-backed search plan and
 
 ## Choose the scope
 
+- **Build landing page:** turn an agreed brief into a clear page and working conversion path; use the landing-page module below. Deployment remains a separate authorized action.
 - **Research:** investigate audience, demand, search intent, competition, and page opportunities. No code changes implied.
 - **Audit:** inspect the supplied site or repository and prioritize findings. No implementation implied.
 - **Implement:** apply requested research or audit recommendations and verify them.
@@ -18,11 +19,17 @@ Turn a product brief or existing website into an evidence-backed search plan and
 
 Infer the mode from the request. A single new page does not require a rebrand or a full application audit. Use supplied decisions; ask only for information that materially changes the work. Continue independent work while answers are pending.
 
+## Build and launch a landing page
+
+Read [the landing-page checklist](references/landing-page.md) for landing-page builds and launches. It adds brief, copy, trust, readability, conversion, release, and public verification checks to the existing SEO and launch guidance. Preserve an existing site's visual design unless redesign is requested. Research depth and page count follow the user's scope.
+
+Include the [Is Agentic workflow](references/is-agentic.md) in landing-page launch verification, or when agent-readiness checks are requested: `npx is-agentic <domain>`. Run it against the canonical public site, record timestamp and evidence, and distinguish a cached report from a post-release scan. Apply relevant findings within authorization; do not build nonexistent APIs to raise a score. An audit-only request does not authorize fixes or deployment.
+
 ## Preflight capabilities before doing work
 
 Do this before generating keywords, inspecting competitors, making an audit table, or changing files. Do not run the workflow on assumed access.
 
-1. Parse the request into deliverables and evidence needs. At minimum, consider: qualitative search-result research; free numeric research with Google Trends and Google Keyword Planner; competitor traffic/rankings; domain availability; trademark clearance; repository/filesystem access; browser/HTTP access; live deployment access; Search Console; analytics; and any framework/build/deployment tool.
+1. Parse the request into deliverables and evidence needs. At minimum, consider: qualitative search-result research; free numeric research with Google Trends and Google Keyword Planner; competitor traffic/rankings; domain availability; trademark clearance; repository/filesystem access; browser/HTTP access; live deployment access; Search Console; analytics; and any framework/build/deployment tool. For a landing-page launch, include Node/npm and access to the public Is Agentic service. Mark unrelated keyword metrics, competitor traffic, naming, and trademark research `NOT NEEDED` unless requested.
 2. Inventory the host's actually available skills, connectors, MCP servers, browser tools, repository tools, and authenticated accounts. An installed skill or connector is not the same as a usable connection. Use read-only capability checks or a harmless metadata probe where supported. Do not guess tool names, claim a vendor connection exists, or make a paid/mutating call as a probe.
 3. Write a compact capability matrix before the first dependent step. Use `AVAILABLE`, `AVAILABLE WITH LIMITS`, `NOT AVAILABLE`, `NOT NEEDED`, or `PENDING USER SETUP`. Include the exact evidence each available capability can produce and its limitations. For example, web search can support qualitative SERP observations but cannot establish monthly volume; Google Trends shows relative interest, while Keyword Planner supplies Google's volume ranges/metrics; a registrar lookup can report current registration status but cannot clear a trademark.
 4. Gate the workflow. If a requested deliverable requires a missing capability, stop that dependent deliverable before research begins and tell the user what is needed: connect an already-supported tool, install an appropriate skill/connector/MCP, or provide a sanitized export. Do not invent a connector, silently substitute a weaker source, or proceed as if the result will be available later. Offer a clearly labeled qualitative/provisional mode only if it still helps and the user chooses it.

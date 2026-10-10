@@ -63,6 +63,17 @@ Priorities: **P0** immediate exposure or critical failure; **P1** launch-blockin
 
 Keep the founder-facing response to the decision summary and the highest-priority bullets. Put exhaustive evidence, source URLs, query tables, and low-priority notes in an appendix or separate saved report. Keep trademark/name notes to 2–3 lines unless a deeper review was requested.
 
+## Is Agentic evidence (landing-page launches or requested audits)
+
+- Public target, command, execution date, CLI version when available: [fill]
+- Report URL, score, and scan timestamp: [fill; unknown fields stay unknown]
+- Report freshness versus deployed release: [current / baseline or stale / unknown]
+- Applicable Essential failures/partial results and Recommended findings: [fill]
+- Fixes and direct production status/header/body verification: [fill]
+- Current result versus baseline; pending fresh scan or user decisions: [fill]
+
+A cached score is not evidence of a post-release rescan. A score is not a conversion, security, or compliance certification.
+
 ## Release handoff
 
 - Changed files or artifacts and purpose: [fill]

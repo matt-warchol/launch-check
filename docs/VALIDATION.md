@@ -1,5 +1,17 @@
 # Validation record
 
+## 1.2.0 update — 2026-10-10
+
+Scope: landing-page workflow, Is Agentic integration, public verification, and launch usage documentation. The earlier 1.1.0 record below remains historical.
+
+- Package validator: PASS (required files, UI metadata, relative links, portable layout). Skill-creator validator: PASS (frontmatter/name/description). Diff whitespace check: PASS.
+- New validator negative cases: PASS, 3/3 fixtures rejected (missing landing-page reference, missing Is Agentic reference, broken usage-guide link). PyYAML 6.0.2 was installed only in a temporary validation directory.
+- Official CLI smoke test: `npx --yes is-agentic armando.avo42.com --json` completed successfully, returning score 61 and scan timestamp `2026-10-10T07:57:29.484Z`. That timestamp precedes the Armando release at approximately 08:30 UTC; this is a stale baseline, not a new scan or regression verdict.
+- Primary provider docs checked: CLI/options, public-report privacy, methodology, and stored-report/six-hour cache semantics. No live website changes were made during this skill update.
+- Manual instruction review: a new brief routes to build/preview without implied deployment; an authorized launch runs the public CLI; a missing public URL leaves the scan pending; stale reports cannot establish score improvement; unavailable service/browser checks remain unverified; unrelated research capabilities stay not needed; audit-only requests do not authorize fixes; nonexistent APIs and business evidence are not fabricated.
+- No independent agent execution, cross-host activation, fresh post-release scan, or ranking outcome evaluation was performed. No new release archives were generated.
+
+
 **Review date:** 2026-09-29 · **Release:** 1.1.0 (`launch-check`)
 
 ## What “validated” means here

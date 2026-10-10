@@ -1,4 +1,4 @@
 interface:
   display_name: "Launch Check"
-  short_description: "Audit SEO and web app launch readiness"
+  short_description: "Build landing pages and verify website launches"
   default_prompt: "Use $launch-check to audit SEO and launch readiness for this website."

@@ -16,6 +16,7 @@ def validate(root):
     skill = root / "skills/launch-check"
     required = ["SKILL.md", "agents/openai.yaml", "references/research.md",
                 "references/technical-seo.md", "references/launch.md",
+                "references/landing-page.md", "references/is-agentic.md",
                 "assets/report-template.md", "LICENSE-NOTICE.md"]
     for name in required:
         if not (skill / name).is_file():

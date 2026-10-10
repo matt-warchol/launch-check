@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 — 2026-10-10
+
+- Added a landing-page build/launch module covering brief, copy, attributable proof, readability, conversion, release, and public verification.
+- Added the official `npx is-agentic <domain>` workflow, JSON evidence, applicability-based priorities, cached-report handling, and production protocol checks.
+- Added a website-launch usage guide and report fields for agent-readiness evidence.
+- Updated skill discovery/UI metadata and package validation to include the new references.
+- Retained existing research/audit boundaries; publishing and implementation still follow actual user authorization.
+
 ## 1.1.0 — 2026-09-29
 
 - Renamed the skill from `web-app-launch-seo`/`launch-seo` to `launch-check` to reflect its broader SEO, privacy, security, SSL/TLS, analytics, and release-readiness scope.
