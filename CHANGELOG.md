@@ -1,5 +1,11 @@
 # Changelog
 
+## Documentation update — 2026-10-10
+
+- Added chat commands, mode selection, concrete inputs, and expected outputs for all five modes.
+- Distinguished skill invocation in agent chat from the separate Is Agentic terminal CLI.
+- Linked the expanded examples from the website-launch guide; runtime instructions remain unchanged.
+
 ## 1.2.0 — 2026-10-10
 
 - Added a landing-page build/launch module covering brief, copy, attributable proof, readability, conversion, release, and public verification.

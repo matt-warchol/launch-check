@@ -12,51 +12,115 @@ Install the `skills/launch-check` folder in your agent's supported skill locatio
 
 For the complete landing-page workflow, see [How to launch a website](docs/LAUNCH-A-WEBSITE.md). Existing installations should replace the whole skill folder with this version, including its supporting references.
 
-Then ask, for example:
+## How to run a mode
+
+**Paste the commands below into your coding agent's chat after installing the skill.** In Codex, `$launch-check` selects the skill; the words after it tell the agent what to do. Replace text in square brackets with your details.
+
+There are no terminal commands such as `launch-check audit` or `launch-check --mode launch`. The modes are instructions to the agent, not CLI subcommands. The separate `npx is-agentic` command runs in a terminal and only retrieves/runs the agent-readiness check.
+
+| You want to… | Mode | Short command to paste into chat | What happens |
+| --- | --- | --- | --- |
+| Create a page | Build landing page | `$launch-check build a landing page for [product]. Prepare a preview; do not push or deploy.` | Creates/changes code, prepares a preview, and runs relevant checks |
+| Plan SEO/content | Research | `$launch-check research SEO for [product] aimed at [audience]. Do not change files.` | Produces sourced opportunities and page briefs |
+| Find problems | Audit | `$launch-check audit [URL] and this repository. Do not change files.` | Reports prioritized issues and evidence |
+| Fix selected problems | Implement | `$launch-check implement these fixes: [list]. Preserve the design; do not push or deploy.` | Changes files and verifies the specified fixes |
+| Publish the page | Launch | `$launch-check launch this site: push to [repo/branch] and deploy to [host/project] at [domain]. Verify production and run Is Agentic.` | Checks release readiness, publishes within authorization, and verifies the live site |
+
+You can use one mode on its own or combine them. You do not need to run research before every build. A practical sequence is **Build → Audit → Implement → Launch**; add Research when you need audience/search planning. Launch can also prepare a release without publishing: say “Prepare the launch handoff; do not push or deploy.”
+
+In another Agent Skills host, use that host's skill-selection convention and the same instructions. A regular chat can read these instructions, but that alone does not install an automatically discoverable skill.
+
+## Copy-paste examples for every mode
+
+### 1. Build landing page — create the page
+
+Use when you have a product brief and need a working page. Give the audience, benefit, conversion destination, brand references, and approved proof.
+
+**Paste into your agent's chat:**
 
 ```text
-Use $launch-check to research SEO for a new invoicing app for
-UK freelancers. The main conversion is a free trial. Keep the existing
-brand. Produce keyword clusters and briefs for the first three pages.
-I do not have a paid keyword tool; label missing volume as unknown.
+$launch-check build a minimalist Next.js landing page for Armando.
+Audience: B2B agencies and consultancies with long-term clients.
+Benefits: clearer account processes, shared client context, and better
+follow-through. Main action: Let's talk, linking to mailto:m@avo42.com.
+Use the brand references and approved founder proof in this project.
+Work in the current repository. Prepare a preview and run relevant
+checks. Do not push or deploy.
 ```
+
+**You get:** page code, preview, working contact action, essential SEO, and test results. Missing proof or product facts remain explicit decisions.
+
+### 2. Research — decide what content to create
+
+Use when you need search opportunities, audience questions, or page briefs before building.
+
+**Paste into your agent's chat:**
 
 ```text
-Use $launch-check to audit this repository and preview URL before
-launch. Report the blockers and evidence. Do not change files yet.
+$launch-check research SEO for an account-management product aimed at
+B2B agencies in [target country/language]. Keep our existing brand.
+Produce intent clusters and briefs for three useful pages, including
+suggested titles, headings, internal links, and calls to action.
+Use free sources. First check which research tools are available.
+Do not invent search volumes or change website files.
 ```
+
+**You get:** sourced research, a page plan, and explicit data gaps. If numeric research needs an unavailable account, the agent explains the setup/export options before that work.
+
+### 3. Audit — check an existing site
+
+Use when a page already exists and you want findings before editing.
+
+**Paste into your agent's chat:**
 
 ```text
-Use $launch-check to implement the agreed SEO fixes and verify the
-production build and primary signup flow. Prepare a release handoff.
+$launch-check audit https://armando.avo42.com and the current repository.
+Check mobile readability, the main contact action, essential SEO,
+social previews, HTTPS, and analytics delivery where access permits.
+Run npx is-agentic armando.avo42.com and record its scan timestamp.
+Give prioritized findings with evidence and concrete fixes.
+Do not change files, push, or deploy.
 ```
 
-In another Agent Skills host, use that host's skill installation/invocation convention. The portable format is used; this release has not been runtime-tested on every host. A regular chat can read the instructions, but that alone does not install an automatically discoverable skill.
+**You get:** an evidence-backed report with blockers, improvements, and checks that could not run. The Is Agentic score is labeled stale if its scan predates the release.
 
-## Landing-page launch example
+### 4. Implement — apply specific fixes
+
+Use after an audit or when you already know what needs changing. Name the fixes or attach the report and identify the agreed items.
+
+**Paste into your agent's chat:**
 
 ```text
-Use $launch-check to build and launch a minimalist landing page for
-[product], aimed at [audience]. The main benefit is [benefit], and the
-primary action leads to [contact or booking URL]. Use the supplied brand
-and verified proof. Work in [repository] and use [hosting project].
-Prepare and test the page first. You may push the agreed changes and
-deploy to [public domain]. Run npx is-agentic [public domain], record the
-scan date, and verify applicable fixes on production. Report remaining
-credentials or product decisions. Do not invent testimonials or APIs.
+$launch-check implement these fixes in the current repository:
+add a valid sitemap, correct canonical and Open Graph metadata,
+fix skipped heading levels, and improve small section text.
+Preserve the existing visual design and product behavior.
+Add relevant regression tests and verify all affected endpoints.
+Prepare a preview and summarize the changes. Do not push or deploy.
 ```
 
-Use only the push/deploy authorization that matches your intent. For a review first, replace that sentence with “Prepare a preview; do not push or deploy.” The public audit may then remain pending.
+**You get:** scoped changes, verification results, and unresolved decisions. If you also want Markdown negotiation or other agent fixes, include those explicitly or reference the applicable audit findings.
 
-## What it delivers
+### 5. Launch — publish and verify
 
-| Mode | Typical result |
-| --- | --- |
-| Build landing page | Clear copy, verified trust, readable design, working conversion path, preview and tests |
-| Research | Sourced opportunities, intent clusters, keyword-to-page map, content briefs, optional name/domain research |
-| Audit | Prioritized findings with evidence, coverage, and unknowns |
-| Implement | Scoped edits, verification results, and unresolved issues |
-| Launch | Readiness handoff, authorized deployment verification, rollback and follow-up plan |
+Use when you are ready to deliver the page. Specify the repository/branch, hosting project, and canonical domain.
+
+**Paste into your agent's chat:**
+
+```text
+$launch-check launch the agreed landing-page changes.
+Push to [GitHub repository] on [branch] and deploy to [hosting project]
+at https://[public domain]. Verify the build, deployment version,
+DNS, HTTPS, main conversion path, metadata, sitemap, and public assets.
+Run npx is-agentic [public domain], check report freshness, and fix
+applicable issues within the agreed landing-page scope.
+Give me the live URL, Git commit, verification results, remaining
+owner actions, and rollback route.
+```
+
+**You get:** a verified public release when access and authorization permit it, plus a concise handoff. Missing account or DNS access is reported with the exact pending action; a local build alone is not a completed launch.
+
+For the full sequence and checklist, see [How to launch a website](docs/LAUNCH-A-WEBSITE.md).
 
 The agent performs a capability preflight before dependent work. It asks for only the missing setup that the requested deliverables require. SEO research uses Google Trends and Google Keyword Planner by default, without paid SEO tools. Keyword Planner may require a completed Google Ads setup and billing information; if unavailable, the agent tells the user before research and offers Trends-only, an export, or setup instructions. Known missing prerequisites are reported as `NOT RUN — prerequisite unavailable`, while `UNVERIFIED` is reserved for an attempted check with insufficient evidence.
 

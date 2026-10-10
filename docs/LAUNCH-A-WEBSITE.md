@@ -2,6 +2,18 @@
 
 Version 1.2.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
 
+## Choose a mode and where to type it
+
+After installation, paste `$launch-check` followed by your request into the coding agent's **chat**, not your terminal. There are no `launch-check build` or `launch-check audit` shell subcommands. The agent infers the mode from the request.
+
+- **Build landing page:** `$launch-check build a landing page for [product]. Prepare a preview; do not push or deploy.`
+- **Research:** `$launch-check research SEO for [product] and [audience]. Do not change files.`
+- **Audit:** `$launch-check audit [URL] and this repository. Do not change files.`
+- **Implement:** `$launch-check implement these fixes: [list]. Preserve the design; do not push or deploy.`
+- **Launch:** `$launch-check push the agreed changes to [repo/branch] and deploy to [host/project] at [domain]. Verify production and run Is Agentic.`
+
+The [README has complete copy-paste examples for all five modes](../README.md#copy-paste-examples-for-every-mode). The terminal command `npx is-agentic [domain]` is a separate public audit tool, not the command to build or deploy a page.
+
 ## 1. Install or update
 
 Follow the installation instructions in [the README](../README.md). Copy the entire `skills/launch-check` folder, including references and assets. Replace an existing installation rather than adding another copy with the same name. This repository update does not automatically update installations on other machines.
