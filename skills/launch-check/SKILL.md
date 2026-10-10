@@ -1,8 +1,8 @@
 ---
 name: launch-check
-description: Build and launch landing pages, research SEO, and audit website launch readiness, including accessibility, SSL/TLS, privacy, GA4 setup, analytics verification, and Is Agentic checks. Use for landing-page builds, launch audits, authorized fixes, and deployment; not for unrelated app development or standalone legal/security audits.
+description: Build and launch landing pages, research SEO, and audit website launch readiness, including accessibility, SSL/TLS, privacy/terms/GDPR drafts, GA4 setup, analytics verification, and Is Agentic checks. Use for landing-page builds, launch audits, authorized fixes, and deployment; not for unrelated app development or standalone legal/security audits.
 metadata:
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Launch Check
@@ -24,6 +24,10 @@ Infer the mode from the request. A single new page does not require a rebrand or
 Read [the landing-page checklist](references/landing-page.md) for landing-page builds and launches. It adds brief, copy, trust, readability, conversion, release, and public verification checks to the existing SEO and launch guidance. Preserve an existing site's visual design unless redesign is requested. Research depth and page count follow the user's scope.
 
 Include the [Is Agentic workflow](references/is-agentic.md) in landing-page launch verification, or when agent-readiness checks are requested: `npx is-agentic <domain>`. Run it against the canonical public site, record timestamp and evidence, and distinguish a cached report from a post-release scan. Apply relevant findings within authorization; do not build nonexistent APIs to raise a score. An audit-only request does not authorize fixes or deployment.
+
+## Legal pages for each website
+
+Read [the legal-pages module](references/legal-pages.md) for each website build/launch and requested policy work. Adapt the bundled neutral Privacy Policy, Terms of Use, and applicable GDPR notice templates to verified operator/data-flow facts. Remove reference-company identity and irrelevant clauses, preserve required disclosures, add footer/consent links, and test public routes. Keep material unknowns in reviewable drafts, never publish placeholders or claim compliance from a template. Use existing publication authorization; only unresolved facts or required consequential decisions pause the dependent action.
 
 ## Google Analytics setup
 

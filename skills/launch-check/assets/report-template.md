@@ -63,6 +63,15 @@ Priorities: **P0** immediate exposure or critical failure; **P1** launch-blockin
 
 Keep the founder-facing response to the decision summary and the highest-priority bullets. Put exhaustive evidence, source URLs, query tables, and low-priority notes in an appendix or separate saved report. Keep trademark/name notes to 2–3 lines unless a deeper review was requested.
 
+## Legal pages (each website build/launch)
+
+- Routes and draft/published status; effective date: [fill]
+- Operator identity/contact and applicability evidence: [fill]
+- Data activities/providers/bases/retention/transfers confirmed: [fill]
+- Source references reviewed and changes from existing policies: [fill]
+- Missing facts, review needed, publication authorization and next owner action: [fill]
+- Placeholder/source-identity checks, footer/consent links, route tests, actual tracking checks: [fill]
+
 ## Google Analytics evidence (when selected)
 
 - Selected account/property/stream and public measurement ID: [fill; no secrets]

@@ -1,5 +1,14 @@
 # Validation record
 
+## 1.4.0 update — 2026-10-10
+
+- Package/resource/link validator: PASS. Skill-creator validator: PASS. Diff whitespace check: PASS.
+- New negative cases: PASS, 10/10 invalid fixtures rejected (four missing legal resources, five source-company name/location/registration variants, one broken template link).
+- Sources reviewed: all three supplied Brainhub pages and European Commission/EDPB guidance. The reference GDPR page was identified as a recruitment notice. The three bundled assets are neutral plain-language drafting scaffolds, not copied company policies.
+- Manual instruction review: operator identity must be real in published pages; reusable drafts remove reference-company identity; unsupported vendors, recruitment processing, jurisdiction, transfer/retention promises and restrictive download licenses are not carried over; missing facts remain draft gaps; existing authorization is respected; links/routes and tracking behavior are verified separately; GDPR material can be merged when appropriate.
+- No policies were deployed to Armando or any other live website in this update. Actual operator facts and jurisdiction-specific suitability were not legally reviewed. Template formatting/package tests do not establish GDPR compliance or independent agent behavior.
+
+
 ## 1.3.0 update — 2026-10-10
 
 - Package/resource/link validator: PASS. Skill-creator frontmatter validator: PASS. Whitespace validation: PASS.

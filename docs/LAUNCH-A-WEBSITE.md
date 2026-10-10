@@ -1,6 +1,6 @@
 # How to launch a website with Launch Check
 
-Version 1.3.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
+Version 1.4.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
 
 ## Choose a mode and where to type it
 
@@ -74,6 +74,14 @@ Replace the example domain. Reports are public; use only public URLs. The [Is Ag
 Work through applicable Essential failures first, then partial checks and Recommended findings. Do not create fictitious developer interfaces, addresses, testimonials, or policy facts just to improve a score. Follow current file formats and verify each public endpoint changed.
 
 The CLI can return a report from before your deployment. Record `scanned_at` and compare it with release time; a second invocation may still return the same report. A stale score stays a baseline until a newer scan exists. Use direct production checks for immediate evidence and the service's supported rescan flow for a fresh report; do not claim a score improvement without one.
+
+## Legal pages for every website launch
+
+The module includes [neutral privacy/terms/GDPR templates and a checklist](../skills/launch-check/references/legal-pages.md). Ask the agent to adapt them to the website and its actual operator, then add footer and consent links. Reuse correct existing policies; a GDPR notice can be merged into the privacy policy where appropriate.
+
+Provide the operator's legal name, address and relevant registration details, public/privacy contact, markets, and known data-processing facts. The agent inspects integrations and asks only for material unknowns: purposes, lawful bases, providers, retention, transfers, and actual consent controls. It does not copy Brainhub's identity, recruitment practices, provider list, or governing-law assumptions.
+
+Draft first while missing facts are pending. Before an authorized publication, resolve placeholders, reconcile the documents with actual behavior, and test public routes, links, and consent controls. A site-specific draft is not legal-compliance certification. The [README has a complete legal-pages prompt](../README.md#add-legal-pages-to-a-website).
 
 ## Optional: set up Google Analytics automatically
 

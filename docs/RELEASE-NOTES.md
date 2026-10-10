@@ -1,4 +1,4 @@
-# Launch Check — 1.3.0
+# Launch Check — 1.4.0
 
 Build and launch clear landing pages with an evidence-based checklist, essential SEO, working conversion paths, and verified production delivery.
 
@@ -9,3 +9,5 @@ The README and website-launch guide include usable prompts, installation/update 
 The skill remains instruction-based and uses its host's available tools. Package validation, manual scenario review, and an actual CLI smoke test are documented in [the validation record](VALIDATION.md). Independent agent evaluation, cross-host activation, ranking improvements, and post-release score improvements have not been established by this release.
 
 Version 1.3.0 adds optional Google Analytics account/stream setup and verification, plus bullet-point descriptions of each mode. Google account provisioning and event receipt were not live-tested: no authenticated Analytics connector was available, and browser access was blocked by an unavailable security-policy check.
+
+Version 1.4.0 adds neutral privacy/terms/GDPR templates and a legal-page checklist to website builds/launches. The supplied reference GDPR page is recruitment-specific; its context is not applied to general sites. Published text must use verified operator/data-flow facts. No live website policy was published, and no jurisdiction-specific legal approval or compliance certification was established by this release.

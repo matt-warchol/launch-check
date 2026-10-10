@@ -4,6 +4,8 @@ Read for a full launch or directly relevant launch risks. Keep checks proportion
 
 ## Business facts, trust, and privacy
 
+Use [the legal-pages module](legal-pages.md) to adapt the neutral privacy/terms/GDPR templates, integrate pages into the website, and verify facts and public delivery.
+
 Establish the operator's identity and contact, audiences/jurisdictions, collected data, purposes, processors, retention/deletion practices, cookies/local storage/pixels, and any sensitive or children's data. Review actual integrations and data flows, not just the wording of a footer.
 
 Draft disclosures and terms only from known facts. Mark missing facts for the operator; do not publish unresolved placeholders or certify compliance from boilerplate. Whether particular terms, cookie controls, or age safeguards are required depends on the service and applicable rules. Obtain specialist review where the application's risk or unresolved legal question warrants it; this skill is not a legal opinion.

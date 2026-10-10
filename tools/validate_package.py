@@ -17,13 +17,21 @@ def validate(root):
     required = ["SKILL.md", "agents/openai.yaml", "references/research.md",
                 "references/technical-seo.md", "references/launch.md",
                 "references/landing-page.md", "references/is-agentic.md",
-                "references/google-analytics.md",
+                "references/google-analytics.md", "references/legal-pages.md",
+                "assets/privacy-policy-template.md", "assets/terms-of-use-template.md",
+                "assets/gdpr-notice-template.md",
                 "assets/report-template.md", "LICENSE-NOTICE.md"]
     for name in required:
         if not (skill / name).is_file():
             errors.append(f"Missing skill file: {name}")
     if errors:
         return errors
+
+    # Reusable legal drafts must not carry the source company's identity.
+    for name in ["privacy-policy-template.md", "terms-of-use-template.md", "gdpr-notice-template.md"]:
+        draft = (skill / "assets" / name).read_text(encoding="utf-8").lower()
+        if any(value in draft for value in ["brainhub", "6312663239", "364666949", "0000622336", "gliwice"]):
+            errors.append(f"Source-company identity remains in legal template: {name}")
 
     content = (skill / "SKILL.md").read_text(encoding="utf-8")
     match = re.match(r"\A---\n(.*?)\n---\n", content, re.S)

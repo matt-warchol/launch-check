@@ -21,6 +21,8 @@ Use for a new landing page or a launch of an existing one. Keep the existing bra
 
 ## Release
 
+- [ ] Run [the legal-pages module](legal-pages.md): adapt privacy/terms and the applicable GDPR notice to actual operator/data flows, resolve publication facts, link from the footer/consent controls, and verify public routes.
+
 - [ ] Inspect the working tree and correct repository, branch, package manager, build directory, hosting project/account, and environment. Keep credentials out of commits and reports. Run the project's actual build and relevant tests; add meaningful tests for changed behavior.
 - [ ] Establish a preview and rollback route. Review the intended diff. Push and deploy only when authorized, honoring authorization already given.
 - [ ] Verify DNS, custom-domain routing, HTTP-to-HTTPS behavior, certificate validity, and provider readiness. Do not assume SSL is ready because the host provisions it automatically.

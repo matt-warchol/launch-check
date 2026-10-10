@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.0 — 2026-10-10
+
+- Added a legal-pages module to each website build/launch: privacy, terms, and applicable GDPR notices.
+- Added three original neutral, plain-language draft templates informed by the supplied Brainhub references; removed source-company and activity-specific assumptions.
+- Added factual gap handling, operator identification, consent/footer integration, public verification, and safeguards against publishing unresolved placeholders.
+- Updated README module bullets/prompts, launch guide, report evidence fields, and package validation.
+
 ## Launch-prompt reminder — 2026-10-10
 
 - Included GA4 setup and receipt verification directly in the example launch prompt so analytics is not forgotten; other providers remain supported.

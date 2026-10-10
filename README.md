@@ -2,7 +2,7 @@
 
 An instruction-based Agent Skill for building landing pages, researching search demand, auditing technical SEO, and verifying website launches, including Is Agentic readiness.
 
-**Version:** 1.3.0 · **Reviewed:** 2026-10-10 · **Distribution:** portable skill folder and GitHub-ready source repository.
+**Version:** 1.4.0 · **Reviewed:** 2026-10-10 · **Distribution:** portable skill folder and GitHub-ready source repository.
 
 The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, API key, MCP server, or runtime script.
 
@@ -37,6 +37,7 @@ In another Agent Skills host, use that host's skill-selection convention and the
 - Turns the audience, benefit, differentiator, and main action into a clear page.
 - Uses approved proof/photos, readable mobile layouts, accessible controls, and subtle motion.
 - Adds essential SEO and social previews; prepares a preview and relevant tests.
+- Drafts privacy/terms and an applicable GDPR notice from real operator and data-flow facts.
 
 ### Research
 
@@ -49,11 +50,13 @@ In another Agent Skills host, use that host's skill-selection convention and the
 - Checks readability, navigation, conversion paths, accessibility, HTML, and status codes.
 - Reviews canonical URLs, sitemap/robots, metadata, social images, and applicable structured data.
 - Checks HTTPS, privacy/tracking, and Is Agentic when in scope; ranks findings with evidence.
+- Checks legal pages for correct operator details, missing disclosures, and contradictions with actual tracking.
 
 ### Implement
 
 - Applies the specified audit fixes while preserving existing design and behavior.
 - Updates relevant copy, code, metadata, agent files, or selected analytics setup.
+- Adapts legal templates, resolves known facts, and adds footer/consent links without publishing unknown claims.
 - Adds meaningful regression coverage and verifies changed behavior; publishing is separate.
 
 ### Launch
@@ -61,6 +64,7 @@ In another Agent Skills host, use that host's skill-selection convention and the
 - Verifies the correct repository, branch, hosting project, build settings, and rollback route.
 - Pushes/deploys when authorized; checks DNS, HTTPS, production conversion paths, and public resources.
 - Runs Is Agentic, checks report freshness, verifies analytics when selected, and gives an owner handoff.
+- Checks legal-page facts/placeholders, publication readiness, links, and live responses.
 
 ### Optional Google Analytics module
 
@@ -68,6 +72,14 @@ In another Agent Skills host, use that host's skill-selection convention and the
 - Installs the tag, page views, and agreed action events without duplicate tracking.
 - Checks consent behavior and confirms data in Realtime/DebugView when access permits.
 - Runs automatically after authorization when account/code access is available; otherwise gives the exact setup step or requests an existing `G-…` measurement ID.
+
+### Privacy, terms, and GDPR module — included in website builds/launches
+
+- Creates simple Privacy Policy and Terms of Use drafts, plus a GDPR notice when applicable.
+- Uses neutral templates: no Brainhub branding, addresses, registration numbers, vendor lists, or recruitment assumptions.
+- Fills the actual operator, contacts, data uses, providers, retention, and other required details.
+- Links pages in the footer and consent controls and tests their public routes.
+- Flags missing facts before publication; a draft/template is not a compliance certificate.
 
 ## Copy-paste examples for every mode
 
@@ -83,6 +95,8 @@ Audience: B2B agencies and consultancies with long-term clients.
 Benefits: clearer account processes, shared client context, and better
 follow-through. Main action: Let's talk, linking to mailto:m@avo42.com.
 Use the brand references and approved founder proof in this project.
+Draft privacy/terms and the applicable GDPR notice from actual operator
+and data-flow facts. Keep missing facts in an internal gap list.
 Work in the current repository. Prepare a preview and run relevant
 checks. Do not push or deploy.
 ```
@@ -157,6 +171,9 @@ and [currency]. Install page-view and primary-action tracking, respect
 consent, and verify actual event receipt.
 Run npx is-agentic [public domain], check report freshness, and fix
 applicable issues within the agreed landing-page scope.
+Prepare/adapt the privacy policy, terms of use, and applicable GDPR
+notice from confirmed facts. Add footer/consent links, check there are
+no unresolved placeholders, and verify the legal pages after release.
 Give me the live URL, Git commit, verification results, remaining
 owner actions, and rollback route.
 ```
@@ -181,6 +198,10 @@ skills/launch-check/
   references/landing-page.md  Build-to-production checklist
   references/is-agentic.md    CLI audit, freshness, fixes, verification
   references/google-analytics.md GA4 setup, consent, events, verification
+  references/legal-pages.md   Privacy/terms/GDPR adaptation and delivery
+  assets/privacy-policy-template.md Neutral privacy draft
+  assets/terms-of-use-template.md   Neutral website terms draft
+  assets/gdpr-notice-template.md    Applicable GDPR notice draft
   assets/report-template.md   Reusable evidence and handoff template
 README.md                     Installation and use
 docs/LAUNCH-A-WEBSITE.md      Step-by-step landing-page usage
@@ -193,6 +214,29 @@ LICENSE-NOTICE.md             Licensing status
 ```
 
 Read [the review](docs/REVIEW.md) for what changed, [validation](docs/VALIDATION.md) for the evidence behind readiness, and [publishing](docs/PUBLISHING.md) before distribution. Source links for SEO and launch guidance are kept with the relevant skill references.
+
+## Add legal pages to a website
+
+**Paste into agent chat:**
+
+```text
+$launch-check add privacy policy, terms of use, and an applicable GDPR
+notice to this website using the bundled neutral templates.
+Operator: [legal name, address, applicable registration details].
+Contact/privacy email: [email]. Website: [URL]. Markets: [countries].
+Use the actual site integrations and confirm data purposes, legal
+bases, providers, retention, transfers, and cookie/consent behavior.
+Simplify the language, remove source-company details and irrelevant
+clauses, and match download permissions to what the site offers.
+Add footer and consent links and test the routes. Ask only for missing
+material facts; prepare reviewable drafts while answers are pending.
+Do not publish placeholders or unsupported promises.
+Prepare a preview; do not push or deploy yet.
+```
+
+For an authorized full launch, include this in your launch request instead. The module checks legal pages on every website build/launch and reuses existing approved policies. A GDPR notice may be combined with the privacy policy; a separate GDPR page is not universally required.
+
+The [legal-pages checklist](skills/launch-check/references/legal-pages.md) links three anonymized, simple starter templates. The source GDPR page concerns recruitment; its hiring-specific clauses are not copied into ordinary marketing websites. Published policies need the **real operator's identity**, even though reusable templates are anonymized.
 
 ## Google Analytics on autopilot
 
