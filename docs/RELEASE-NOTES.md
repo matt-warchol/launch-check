@@ -1,6 +1,8 @@
-# Launch Check — 1.7.0
+# Launch Check — 1.8.0
 
 Audit and launch landing pages with an evidence-based checklist, essential SEO, working conversion paths, and verified production delivery.
+
+Version 1.8.0 makes updates discoverable to Codex and Claude Code. The installed skill names its GitHub source and local locations, and a bundled updater can check or apply the latest `main` version with backups. Repository-level `AGENTS.md` and `CLAUDE.md` cover maintenance inside the checkout. Automatic periodic updating is optional and must be scheduled separately.
 
 Version 1.7.0 adds IndexNow setup by default to new public sites intended for search discovery. The agent checks native CMS/host support first, then wires an eligible page-publish event or post-deploy hook when needed. It verifies the host key, initial notification, and later event-driven notification. Preview/private pages are excluded. IndexNow receipt is reported separately from actual indexing; Google sitemap and Search Console work remains separate.
 

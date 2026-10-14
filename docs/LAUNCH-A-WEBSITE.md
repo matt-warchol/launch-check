@@ -1,6 +1,6 @@
 # How to launch a website with Launch Check
 
-Version 1.7.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
+Version 1.8.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
 
 ## Choose a mode and where to type it
 

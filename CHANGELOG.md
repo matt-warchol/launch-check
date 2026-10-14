@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8.0 — 2026-10-14
+
+- Added a self-contained GitHub update workflow to the skill, including the source repository, branch, install locations, and “launch-skill” alias.
+- Added a check/apply updater that backs up old installs, avoids downgrades, and leaves same-version local changes for review.
+- Added repository guidance for Codex/ChatGPT and Claude Code, plus installation/update instructions.
+
 ## 1.7.0 — 2026-10-14
 
 - Added IndexNow as the default notification setup for new public, search-discoverable websites built or launched with the skill.

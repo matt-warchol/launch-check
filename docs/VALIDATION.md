@@ -1,5 +1,12 @@
 # Validation record
 
+## 1.8.0 update — 2026-10-14
+
+- Official Claude Code skill docs confirmed `~/.claude/skills/<name>` for personal skills and support for symlinked skill folders. The bundled Codex installer guidance confirmed GitHub install destinations and that existing directories are not overwritten by its installer.
+- Updater fixture: PASS. An older physical install was detected and updated; its old content was backed up; a Claude symlink resolved to the updated skill; a repeated apply found the current version. No live installed folder was used in this fixture.
+- Package/resource/link validator: PASS. Skill-creator validator: PASS. Diff whitespace check: PASS.
+- No scheduled updater was created. A copied skill still requires an explicit update request or an OS/agent schedule.
+
 ## 1.7.0 update — 2026-10-14
 
 - Checked IndexNow's official documentation and FAQ for verification keys, event notifications, response codes, batching, and participating endpoints; checked Google's indexing FAQ for the no-guarantee boundary.

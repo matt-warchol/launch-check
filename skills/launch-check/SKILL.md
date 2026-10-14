@@ -1,13 +1,19 @@
 ---
 name: launch-check
-description: Build landing pages, research SEO, and audit conversion, search visibility, and launch readiness, including privacy/terms/GDPR drafts and GA4. Use for page or site audits, landing-page builds, authorized fixes, and launches; not for unrelated app development or standalone legal/security audits.
+description: Build landing pages, research SEO, audit conversion and launch readiness, or update the installed launch-check (launch-skill) from its GitHub source. Use for page/site audits, landing-page builds, authorized fixes, launches, and requests to update this skill; not for unrelated development.
 metadata:
-  version: "1.7.0"
+  version: "1.8.0"
 ---
 
 # Launch Check
 
 Turn a product brief or existing website into an evidence-backed search plan and a verified launch handoff. Adapt to the existing brand, stack, host, market, and task scope.
+
+## Update this skill from GitHub
+
+When the user says “update launch-check,” “update launch-skill,” or “get the newest version from GitHub,” use **https://github.com/matt-warchol/launch-check**, branch `main`, folder `skills/launch-check`. Do not search for a different repository or update an unrelated skill. The personal installs on this Mac are `~/.agents/skills/launch-check` and `~/.codex/skills/launch-check`; Claude Code can use `~/.claude/skills/launch-check` (a symlink to the `.agents` copy also works).
+
+Run `python3 scripts/update_from_github.py` from this installed skill to check the latest version, then rerun with `--apply` when the user requested the update. The updater keeps a backup of each replaced installation, refuses downgrades, and leaves same-version local differences for review. It updates existing physical installs; symlinks follow their target. If this script is absent in an older installation, fetch the repository above, inspect `skills/launch-check/SKILL.md`, and replace the installed skill folder(s) from that exact path after backing them up. Verify the installed version and report which clients were updated. This is a maintenance request; do not run the website audit/launch workflow for it.
 
 ## Choose the scope
 
