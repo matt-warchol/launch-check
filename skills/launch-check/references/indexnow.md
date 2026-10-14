@@ -1,0 +1,22 @@
+# IndexNow on public website launches
+
+Use for each new website built or launched with launch-check when its public pages should be discoverable in search. The aim is an **ongoing publication hook**, not a one-time ping. During a preview-only build, prepare and test the integration without notifying search engines. Activate it after the user-authorized production launch. Skip private sites, authenticated content, staging/preview hosts, and sites whose owner opts out. For an audit-only request, report the current setup and gaps without making changes.
+
+## Choose the site's publication path
+
+1. Check whether the CMS, SEO plugin, or host already sends IndexNow notifications for added, updated, and deleted pages. If it does, configure and verify that path instead of installing a second sender. [IndexNow recommends checking platform support first](https://www.indexnow.org/faq).
+2. Otherwise, integrate with the actual **successful publish event**. For a CMS, use its publish/update/unpublish event. For a code site, use a post-deploy job or webhook after the public deployment succeeds; derive changed canonical URLs from the release/content change set. A scheduled sitemap comparison can catch missed new and removed URLs, but a sitemap alone may not reveal updates to existing pages. Do not send on a build, preview, failed deploy, every page view, or every deploy that leaves a URL unchanged.
+3. Set up one high-entropy key per production host, 8–128 characters using letters, digits, or hyphens as the protocol permits. Serve a UTF-8 text file at `https://<host>/<key>.txt` whose body is exactly the key. Verify it is publicly reachable with the expected content. If it must live elsewhere, set `keyLocation` and respect its path scope. Keep the key out of logs and reports. Do not reuse the key across unrelated hosts. A platform-managed integration may manage this itself.
+4. Queue the final absolute canonical URLs for newly published or meaningfully changed public pages. For removed pages, queue the former URL only after its public response is 404/410 or an intended redirect. Exclude drafts, `noindex`, robots-blocked, authenticated, preview, staging, and noncanonical URLs. Group only URLs owned by the verified host; deduplicate and batch changes. Respect the protocol's maximum of 10,000 URLs per POST.
+5. Send one POST to `https://api.indexnow.org/indexnow` with `Content-Type: application/json; charset=utf-8` and `{ "host": "www.example.com", "key": "<key>", "urlList": ["https://www.example.com/new-page"] }`. Add `keyLocation` only when needed. One participating endpoint shares accepted notifications with the other participating engines; do not send the same change to every endpoint. Handle retries with bounded backoff for temporary errors and `429`, without creating duplicate floods. Record URL, event, time, response code, and retry status without logging the key.
+6. After launch, verify the key file, a real eligible publish/change event, the resulting request, and its response. `200` means received; `202` means received with key validation pending. Investigate `400`, `403`, and `422` rather than retrying blindly. Check that the URL remains in the sitemap and internal links where appropriate. Report `configured`, `event verified`, and `accepted by IndexNow` separately. A successful submission does **not** prove crawling, indexing, ranking, or delivery to Google.
+
+For a first launch, submit the site's actual public canonical URLs once after production verification, then rely on change events. Keep the sitemap and Google Search Console workflow for Google; Google is not listed among the IndexNow participating endpoints. An agent skill cannot run in the background by itself: the CMS/host/deployment integration is what makes future pages submit automatically. If the site or host cannot support that hook, leave it `PENDING SETUP` with the exact integration point and owner instead of claiming autopilot.
+
+## Primary sources
+
+Checked 2026-10-14; verify current protocol details before implementation.
+
+- [IndexNow documentation](https://www.indexnow.org/documentation) — key verification, request formats, response codes, and batch limit.
+- [IndexNow FAQ](https://www.indexnow.org/faq) — native integrations, participating endpoints, and automation guidance.
+- [Google Search crawling and indexing FAQ](https://developers.google.com/search/help/crawling-index-faq) — discovery and submission do not guarantee indexing.

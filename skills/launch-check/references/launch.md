@@ -40,6 +40,7 @@ Inspect URLs, query strings, payloads, logs, and session replay for personal dat
 4. Before deployment, identify the previous working release or first-release disable/rollback path. For data migrations, review backup/restore and compatibility. Record release blockers and residual risk in the report.
 5. Review the diff. Commit, push, change DNS, publish policies, and deploy only within the user's authorization. Do not stage unrelated local work. After deployment, verify the live public URL and critical flow; roll back within authorization if an agreed critical condition fails, otherwise report and seek the needed decision.
 6. When authorized and access exists, verify the site's Search Console property, submit its sitemap, and inspect a representative URL. Otherwise provide exact next steps and label them pending. Submission is not proof of indexing. Consider another search engine's webmaster tools when relevant to the market; do not require every provider.
+7. For a new public site meant for search discovery, set up and verify the [IndexNow publication hook](indexnow.md). A production release and a future page-publish event must each be checked; a one-time manual notification is not autopilot. Keep the Google sitemap/Search Console path separate.
 
 ## Follow-up handoff
 

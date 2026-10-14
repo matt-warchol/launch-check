@@ -1,5 +1,12 @@
 # Validation record
 
+## 1.7.0 update — 2026-10-14
+
+- Checked IndexNow's official documentation and FAQ for verification keys, event notifications, response codes, batching, and participating endpoints; checked Google's indexing FAQ for the no-guarantee boundary.
+- Package/resource/link validator: PASS. Skill-creator validator: PASS. Diff whitespace check: PASS.
+- Manual scenario review: a preview-only build prepares without submitting; an authorized public launch configures a native or custom publish hook; future new/changed/removed canonical pages trigger once; private/staging/noindex pages are excluded; an existing audit reports status only; `200`/`202` do not establish indexing or Google delivery.
+- No user website or search engine endpoint was changed by this skill update. Actual event automation still has to be installed and verified in each site's CMS or deployment flow.
+
 ## 1.6.0 update — 2026-10-14
 
 - Official Is Agentic site, docs, methodology, and a completed public report were inspected on this date. The browser report exposes selectable findings and **Prompt to improve / Copy prompt**; a sample JSON API response contained report findings but no generated prompt field. The copy button showed “Prompt copied” in the in-app browser, but that browser's clipboard API returned empty text, so this host could not verify the copied content. The instructions now require a nonempty readback or an explicit unavailable status.

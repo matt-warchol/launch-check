@@ -2,9 +2,9 @@
 
 An instruction-based Agent Skill for building landing pages, researching search demand, auditing conversion and technical SEO, and verifying website launches, including Is Agentic readiness.
 
-**Version:** 1.6.0 · **Reviewed:** 2026-10-14 · **Distribution:** portable skill folder and GitHub source repository.
+**Version:** 1.7.0 · **Reviewed:** 2026-10-14 · **Distribution:** portable skill folder and GitHub source repository.
 
-The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, API key, MCP server, or runtime script.
+The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, MCP server, or runtime script; IndexNow setup uses a site-specific verification key unless the platform manages it.
 
 ## Quick start
 
@@ -66,7 +66,14 @@ In another Agent Skills host, use that host's skill-selection convention and the
 - Verifies the correct repository, branch, hosting project, build settings, and rollback route.
 - Pushes/deploys when authorized; checks DNS, HTTPS, production conversion paths, and public resources.
 - Runs Is Agentic, checks report freshness, verifies analytics when selected, and gives an owner handoff.
+- Sets up IndexNow notifications for new public sites meant for search discovery and verifies that later page publishes send automatically.
 - Checks legal-page facts/placeholders, publication readiness, links, and live responses.
+
+### IndexNow for new websites
+
+For each new public, search-discoverable website, launch-check checks whether the CMS or host already supports [IndexNow](https://www.indexnow.org/faq). If not, it prepares a publish hook in the site's actual stack. Once the production launch is authorized, the hook notifies IndexNow when an eligible page is **added, meaningfully updated, or removed**. It verifies the host key, a real publish event, and the API response. Preview builds and private pages are excluded. You can opt out for a site.
+
+This is site-level automation: the skill configures it in each website; the skill itself does not run in the background. IndexNow tells participating engines that a URL changed. Acceptance does **not** mean the page was indexed, and Google still needs normal crawlable pages, a sitemap, and Search Console checks. See [the IndexNow module](skills/launch-check/references/indexnow.md).
 
 ### Optional Google Analytics module
 
@@ -177,6 +184,8 @@ and [currency]. Install page-view and primary-action tracking, respect
 consent, and verify actual event receipt.
 Run npx is-agentic [public domain], check report freshness, and fix
 applicable issues within the agreed landing-page scope.
+Set up IndexNow for this public site and verify that future published
+page changes trigger notifications automatically.
 Prepare/adapt the privacy policy, terms of use, and applicable GDPR
 notice from confirmed facts. Add footer/consent links, check there are
 no unresolved placeholders, and verify the legal pages after release.
@@ -204,6 +213,7 @@ skills/launch-check/
   references/launch.md        Privacy, security, telemetry, release
   references/landing-page.md  Build-to-production checklist
   references/is-agentic.md    CLI audit, freshness, fixes, verification
+  references/indexnow.md      Publish hook, key, submission, verification
   references/google-analytics.md GA4 setup, consent, events, verification
   references/legal-pages.md   Privacy/terms/GDPR adaptation and delivery
   assets/privacy-policy-template.md Neutral privacy draft

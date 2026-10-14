@@ -102,6 +102,15 @@ Keep the founder-facing response to the decision summary and the highest-priorit
 - Browser/account checks unavailable and exact owner test: [fill]
 - Disable/rollback route: [fill]
 
+## IndexNow evidence (new public search-discoverable sites)
+
+- Native CMS/host integration reused or custom publish hook added: [fill]
+- Production host and public key-file verification: [PASS/FAIL/NOT RUN; never paste the key]
+- Eligible added/updated/removed URL event and resulting request: [fill]
+- API response and retry state: [200 received / 202 validation pending / error / NOT RUN]
+- Ongoing publish event verified separately from initial submission: [fill]
+- Google sitemap/Search Console status: [fill separately; IndexNow is not a Google indexing signal]
+
 ## Is Agentic evidence (public-page audits and landing-page launches)
 
 - Public page target, browser/CLI method, execution date, CLI version when available: [fill]

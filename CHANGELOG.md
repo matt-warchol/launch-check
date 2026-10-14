@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.0 — 2026-10-14
+
+- Added IndexNow as the default notification setup for new public, search-discoverable websites built or launched with the skill.
+- Added a publication-event workflow for new, changed, and removed pages, with native-integration detection, host-key verification, retries, and live evidence.
+- Clarified that IndexNow acceptance is not indexing and does not replace Google sitemap/Search Console work.
+
 ## 1.6.0 — 2026-10-14
 
 - Made the Is Agentic public-page report part of audit mode and added its copied, selected improvement prompt to the audit output.

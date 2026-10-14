@@ -1,6 +1,6 @@
 # How to launch a website with Launch Check
 
-Version 1.6.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
+Version 1.7.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
 
 ## Choose a mode and where to type it
 
@@ -34,6 +34,8 @@ run relevant tests. Do not push or deploy until I ask.
 
 The agent checks only capabilities needed for this scope. Keyword metrics, new domain research, or a full application audit are not automatic requirements for a landing page. Missing credentials block only their dependent actions.
 
+For a new public site intended for search discovery, the agent also prepares [IndexNow automatic notifications](../skills/launch-check/references/indexnow.md) in its actual CMS or deployment flow. They stay inactive on previews.
+
 ## 3. Review the page and checklist
 
 Review the page's promise, benefits, proof, mobile readability, and main action. The [landing-page checklist](../skills/launch-check/references/landing-page.md) covers meaningful HTML, headings, subtle motion, downloads/forms, SEO, social previews, analytics delivery, and release settings. Do not approve claims or policies whose facts are still unknown.
@@ -52,9 +54,13 @@ fix applicable issues within the agreed landing-page scope.
 Set up Google Analytics in [account/property] if selected; install
 page-view and primary-action tracking and verify receipt. For a new
 property use [time zone] and [currency].
+Enable IndexNow for this public site and verify that a later new or
+updated page sends a notification automatically.
 ```
 
 Existing authorization does not need to be repeated. If the registrar or account requires your action, the agent should give the exact pending setup and continue independent work. A DNS record alone does not prove a working certificate or correct production site.
+
+IndexNow needs a verified key on the production host unless the platform manages it. The agent checks the first accepted notification and the ongoing publish hook. `200` or `202` confirms receipt or pending key validation, **not indexing**. Keep the sitemap and Google Search Console checks; Google is not an IndexNow participant.
 
 ## 5. Run the public agent-readiness check
 

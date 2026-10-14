@@ -1,6 +1,8 @@
-# Launch Check — 1.6.0
+# Launch Check — 1.7.0
 
 Audit and launch landing pages with an evidence-based checklist, essential SEO, working conversion paths, and verified production delivery.
+
+Version 1.7.0 adds IndexNow setup by default to new public sites intended for search discovery. The agent checks native CMS/host support first, then wires an eligible page-publish event or post-deploy hook when needed. It verifies the host key, initial notification, and later event-driven notification. Preview/private pages are excluded. IndexNow receipt is reported separately from actual indexing; Google sitemap and Search Console work remains separate.
 
 Version 1.6.0 adds the Is Agentic browser report to public-page audits. The agent copies the selected **Prompt to improve** into the saved audit output, records the report URL and scan time, and turns applicable findings into a checked fix list. If the copy control is unavailable, the prompt remains explicitly unavailable; the JSON API and CLI findings are not passed off as copied text.
 

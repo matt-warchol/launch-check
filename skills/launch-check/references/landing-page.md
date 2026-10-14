@@ -22,12 +22,14 @@ Use for a new landing page or a launch of an existing one. Keep the existing bra
 ## Release
 
 - [ ] Run [the legal-pages module](legal-pages.md): adapt privacy/terms and the applicable GDPR notice to actual operator/data flows, resolve publication facts, link from the footer/consent controls, and verify public routes.
+- [ ] Prepare [IndexNow](indexnow.md) for each new public search-discoverable site: reuse native support or wire added/updated/deleted page events to a post-publish notification. Keep it inactive on previews.
 
 - [ ] Inspect the working tree and correct repository, branch, package manager, build directory, hosting project/account, and environment. Keep credentials out of commits and reports. Run the project's actual build and relevant tests; add meaningful tests for changed behavior.
 - [ ] Establish a preview and rollback route. Review the intended diff. Push and deploy only when authorized, honoring authorization already given.
 - [ ] Verify DNS, custom-domain routing, HTTP-to-HTTPS behavior, certificate validity, and provider readiness. Do not assume SSL is ready because the host provisions it automatically.
 - [ ] Run the [Is Agentic check](is-agentic.md) on the canonical public domain. Fix applicable essential failures first, then partial results and recommendations; verify the deployed responses directly and check report freshness.
 - [ ] Repeat critical checks on production: conversion path, HTML/404 status, canonical and social metadata, sitemap/robots, images/downloads, telemetry, and any added Markdown/agent files. Local success does not prove production behavior.
+- [ ] After an authorized launch, verify the IndexNow key and first accepted submission, then confirm a later publish event triggers the sender automatically. Report notification status separately from indexing.
 - [ ] Compare the deployed version with the intended Git commit using available provider metadata. Record URL, commit, deployment, checks, remaining decisions, and rollback owner.
 
 ## Handoff

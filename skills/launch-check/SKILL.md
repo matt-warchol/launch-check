@@ -2,7 +2,7 @@
 name: launch-check
 description: Build landing pages, research SEO, and audit conversion, search visibility, and launch readiness, including privacy/terms/GDPR drafts and GA4. Use for page or site audits, landing-page builds, authorized fixes, and launches; not for unrelated app development or standalone legal/security audits.
 metadata:
-  version: "1.6.0"
+  version: "1.7.0"
 ---
 
 # Launch Check
@@ -28,6 +28,8 @@ Read [the audit module](references/audit.md) for audit requests. It covers messa
 Read [the landing-page checklist](references/landing-page.md) for landing-page builds and launches. It adds brief, copy, trust, readability, conversion, release, and public verification checks to the existing SEO and launch guidance. Preserve an existing site's visual design unless redesign is requested. Research depth and page count follow the user's scope.
 
 Include the [Is Agentic workflow](references/is-agentic.md) in public-page audits, landing-page launch verification, and requested agent-readiness checks. Use the canonical public URL, record timestamp and evidence, and distinguish a cached report from a post-release scan. Apply relevant findings within authorization; do not build nonexistent APIs to raise a score. An audit-only request does not authorize fixes or deployment.
+
+For each new public website built or launched with this skill, read [the IndexNow module](references/indexnow.md). Include automatic change notifications by default when the site is intended for search discovery: prepare the integration during a build, then activate and verify it after an authorized production launch. Reuse working CMS/host support when present. For an existing-site audit, inspect and report IndexNow status without changing the site. Do not treat a notification as indexing or as a substitute for Google Search Console.
 
 ## Legal pages for each website
 
@@ -97,6 +99,8 @@ Read [launch guidance](references/launch.md) only for full launch readiness or r
 Continue authorized, reversible edits and checks without a mandatory approval after every phase. Complete the reviewable work before asking for a consequential decision.
 
 Domain purchases, paid services, account/DNS changes, public deployment, publication of legal policies, and external submissions require authorization for that action. Honor authorization already given. A missing business fact is a dependency, not permission to fabricate it. Pause only the dependent action and continue the rest.
+
+For a user-authorized launch of a new public, search-discoverable site, the IndexNow setup and first notification are included by default under the launch scope described above; do not request a second approval for that routine step. Respect an explicit opt-out or a narrower launch instruction. Future notifications are made by the site integration, not by an agent running after the chat ends.
 
 Inspect the working tree before changes. Do not stage unrelated work or commit/push merely because the checklist reaches its end. When version-control delivery is authorized, include only the intended changes. Use previews or staging where useful, preserve private access controls, and have a rollback route before production changes.
 
