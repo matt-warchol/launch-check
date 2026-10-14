@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.5.0 — 2026-10-14
+
+- Added a dedicated conversion audit module for messaging, CTA hierarchy, page flow, friction, trust, and search/AI readability.
+- Added a scoped CTA inventory and evidence-based FIX / TEST / BUILD / MONITOR actions to the report template.
+- Made text/HTML-only audits possible without claiming live behavior, measured uplift, or launch readiness; agency/B2B criteria apply only when relevant.
+- Updated audit prompts, UI description, usage docs, and package validation while retaining the 1.4.0 legal-pages module.
+
 ## 1.4.0 — 2026-10-10
 
 - Added a legal-pages module to each website build/launch: privacy, terms, and applicable GDPR notices.

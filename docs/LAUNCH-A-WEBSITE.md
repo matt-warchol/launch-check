@@ -1,6 +1,6 @@
 # How to launch a website with Launch Check
 
-Version 1.4.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
+Version 1.5.0. This workflow turns a brief or an existing landing page into a tested production release. It works with the framework and hosting provider you choose; Next.js, GitHub, and Vercel were used for Armando but are not prerequisites.
 
 ## Choose a mode and where to type it
 
@@ -8,7 +8,7 @@ After installation, paste `$launch-check` followed by your request into the codi
 
 - **Build landing page:** `$launch-check build a landing page for [product]. Prepare a preview; do not push or deploy.`
 - **Research:** `$launch-check research SEO for [product] and [audience]. Do not change files.`
-- **Audit:** `$launch-check audit [URL] and this repository. Do not change files.`
+- **Audit:** `$launch-check audit [URL] for conversion and SEO. Audience: [buyer]. Primary action: [goal]. Do not change files.`
 - **Implement:** `$launch-check implement these fixes: [list]. Preserve the design; do not push or deploy.`
 - **Launch:** `$launch-check push the agreed changes to [repo/branch] and deploy to [host/project] at [domain]. Verify production and run Is Agentic.`
 
@@ -37,6 +37,8 @@ The agent checks only capabilities needed for this scope. Keyword metrics, new d
 ## 3. Review the page and checklist
 
 Review the page's promise, benefits, proof, mobile readability, and main action. The [landing-page checklist](../skills/launch-check/references/landing-page.md) covers meaningful HTML, headings, subtle motion, downloads/forms, SEO, social previews, analytics delivery, and release settings. Do not approve claims or policies whose facts are still unknown.
+
+For an existing page, the [audit module](../skills/launch-check/references/audit.md) inventories visible conversion CTAs and checks message consistency, page flow, friction, trust, and search readability. It returns evidence-backed **FIX / TEST / BUILD / MONITOR** actions. Supply the intended audience and conversion goal; text or HTML is enough for a copy review, while live behavior needs a public page or working preview. An audit alone does not change the site or establish launch readiness.
 
 Ask the agent to resolve agreed issues and provide the preview URL, test results, pending decisions, and rollback route. Browser checks and HTTP checks are different evidence: blocked browser access must be disclosed.
 

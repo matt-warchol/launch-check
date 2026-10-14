@@ -1,6 +1,8 @@
-# Launch Check — 1.4.0
+# Launch Check — 1.5.0
 
-Build and launch clear landing pages with an evidence-based checklist, essential SEO, working conversion paths, and verified production delivery.
+Audit and launch landing pages with an evidence-based checklist, essential SEO, working conversion paths, and verified production delivery.
+
+Version 1.5.0 adds a dedicated conversion audit: message and CTA consistency, page flow, buying friction, trust, and search/AI readability. It records each visible conversion CTA in the audited scope and groups actions into FIX / TEST / BUILD / MONITOR. The audit works from page text or HTML, while clearly reserving live behavior and outcome claims for checks with the required access and data. Agency/B2B criteria apply only when the actual audience warrants them.
 
 This release adds landing-page and Is Agentic modules to the existing research, audit, implementation, and launch modes. The official `npx is-agentic <domain>` workflow records score and scan date, prioritizes applicable findings, handles cached reports, and verifies deployed endpoints directly. It avoids inventing developer interfaces or customer proof to raise an audit score.
 

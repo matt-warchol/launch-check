@@ -1,8 +1,8 @@
 # Launch Check
 
-An instruction-based Agent Skill for building landing pages, researching search demand, auditing technical SEO, and verifying website launches, including Is Agentic readiness.
+An instruction-based Agent Skill for building landing pages, researching search demand, auditing conversion and technical SEO, and verifying website launches, including Is Agentic readiness.
 
-**Version:** 1.4.0 · **Reviewed:** 2026-10-10 · **Distribution:** portable skill folder and GitHub-ready source repository.
+**Version:** 1.5.0 · **Reviewed:** 2026-10-14 · **Distribution:** portable skill folder and GitHub source repository.
 
 The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, API key, MCP server, or runtime script.
 
@@ -22,7 +22,7 @@ There are no terminal commands such as `launch-check audit` or `launch-check --m
 | --- | --- | --- | --- |
 | Create a page | Build landing page | `$launch-check build a landing page for [product]. Prepare a preview; do not push or deploy.` | Creates/changes code, prepares a preview, and runs relevant checks |
 | Plan SEO/content | Research | `$launch-check research SEO for [product] aimed at [audience]. Do not change files.` | Produces sourced opportunities and page briefs |
-| Find problems | Audit | `$launch-check audit [URL] and this repository. Do not change files.` | Reports prioritized issues and evidence |
+| Find problems | Audit | `$launch-check audit [URL] for conversion and SEO. Audience: [buyer]. Primary action: [goal]. Do not change files.` | Reports the CTA inventory, prioritized issues, evidence, and limits |
 | Fix selected problems | Implement | `$launch-check implement these fixes: [list]. Preserve the design; do not push or deploy.` | Changes files and verifies the specified fixes |
 | Publish the page | Launch | `$launch-check launch this site: push to [repo/branch] and deploy to [host/project] at [domain]. Verify production and run Is Agentic.` | Checks release readiness, publishes within authorization, and verifies the live site |
 
@@ -47,10 +47,11 @@ In another Agent Skills host, use that host's skill-selection convention and the
 
 ### Audit
 
-- Checks readability, navigation, conversion paths, accessibility, HTML, and status codes.
-- Reviews canonical URLs, sitemap/robots, metadata, social images, and applicable structured data.
-- Checks HTTPS, privacy/tracking, and Is Agentic when in scope; ranks findings with evidence.
-- Checks legal pages for correct operator details, missing disclosures, and contradictions with actual tracking.
+- Reviews the offer, audience fit, message consistency, CTA hierarchy, page flow, friction, trust, and relevant buyer objections.
+- Inventories each visible conversion CTA in the audited scope: placement, exact copy, destination/result, commitment, issue, and suggested action.
+- Checks search and AI readability; with live access, reviews conversion paths, accessibility, status codes, canonical URLs, sitemap/robots, metadata, social images, and applicable structured data.
+- Checks HTTPS, privacy/tracking, legal-page facts, and Is Agentic when in scope. Groups recommendations into **FIX / TEST / BUILD / MONITOR** with evidence and priorities.
+- Separates observations from hypotheses. A text-only audit does not claim live behavior, measured conversion lift, or launch readiness.
 
 ### Implement
 
@@ -120,7 +121,7 @@ Do not invent search volumes or change website files.
 
 **You get:** sourced research, a page plan, and explicit data gaps. If numeric research needs an unavailable account, the agent explains the setup/export options before that work.
 
-### 3. Audit — check an existing site
+### 3. Audit — check an existing page or site
 
 Use when a page already exists and you want findings before editing.
 
@@ -128,14 +129,17 @@ Use when a page already exists and you want findings before editing.
 
 ```text
 $launch-check audit https://armando.avo42.com and the current repository.
-Check mobile readability, the main contact action, essential SEO,
-social previews, HTTPS, and analytics delivery where access permits.
+Audience: B2B agencies and consultancies. Primary action: contact us.
+Review the message, every visible conversion CTA, page flow, trust,
+mobile readability, the contact path, and essential SEO. Check social
+previews, HTTPS, and analytics delivery where access permits.
 Run npx is-agentic armando.avo42.com and record its scan timestamp.
-Give prioritized findings with evidence and concrete fixes.
+Give the CTA inventory and prioritized FIX / TEST / BUILD / MONITOR
+actions. Separate observed issues from hypotheses.
 Do not change files, push, or deploy.
 ```
 
-**You get:** an evidence-backed report with blockers, improvements, and checks that could not run. The Is Agentic score is labeled stale if its scan predates the release.
+**You get:** an evidence-backed report with a CTA inventory, top actions, and checks that could not run. The Is Agentic score is labeled stale if its scan predates the release. For a copy-only review, attach text or HTML instead of a URL; live behavior stays unverified.
 
 ### 4. Implement — apply specific fixes
 
@@ -193,6 +197,7 @@ skills/launch-check/
   SKILL.md                    Entry point and decision rules
   agents/openai.yaml          Codex presentation metadata
   references/research.md      Demand, intent, competitors, domains
+  references/audit.md         Conversion, messaging, CTA, trust, action plan
   references/technical-seo.md Indexing, metadata, AI search, experience
   references/launch.md        Privacy, security, telemetry, release
   references/landing-page.md  Build-to-production checklist

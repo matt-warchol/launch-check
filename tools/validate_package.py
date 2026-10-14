@@ -15,6 +15,7 @@ def validate(root):
     errors = []
     skill = root / "skills/launch-check"
     required = ["SKILL.md", "agents/openai.yaml", "references/research.md",
+                "references/audit.md",
                 "references/technical-seo.md", "references/launch.md",
                 "references/landing-page.md", "references/is-agentic.md",
                 "references/google-analytics.md", "references/legal-pages.md",

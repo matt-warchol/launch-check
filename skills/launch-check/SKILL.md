@@ -1,8 +1,8 @@
 ---
 name: launch-check
-description: Build and launch landing pages, research SEO, and audit website launch readiness, including accessibility, SSL/TLS, privacy/terms/GDPR drafts, GA4 setup, analytics verification, and Is Agentic checks. Use for landing-page builds, launch audits, authorized fixes, and deployment; not for unrelated app development or standalone legal/security audits.
+description: Build landing pages, research SEO, and audit conversion, search visibility, and launch readiness, including privacy/terms/GDPR drafts and GA4. Use for page or site audits, landing-page builds, authorized fixes, and launches; not for unrelated app development or standalone legal/security audits.
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
 ---
 
 # Launch Check
@@ -13,11 +13,15 @@ Turn a product brief or existing website into an evidence-backed search plan and
 
 - **Build landing page:** turn an agreed brief into a clear page and working conversion path; use the landing-page module below. Deployment remains a separate authorized action.
 - **Research:** investigate audience, demand, search intent, competition, and page opportunities. No code changes implied.
-- **Audit:** inspect the supplied site or repository and prioritize findings. No implementation implied.
+- **Audit:** inspect the supplied page text, HTML, live site, or repository within the evidence available; prioritize findings. No implementation implied.
 - **Implement:** apply requested research or audit recommendations and verify them.
 - **Launch:** prepare and, when authorized, deploy the agreed changes and verify the public result.
 
 Infer the mode from the request. A single new page does not require a rebrand or a full application audit. Use supplied decisions; ask only for information that materially changes the work. Continue independent work while answers are pending.
+
+## Audit a page or site
+
+Read [the audit module](references/audit.md) for audit requests. It covers messaging, CTA hierarchy, page experience, conversion friction, trust, search/AI readability, and a concrete action plan. Apply B2B, agency, or SaaS buying criteria only when the product and audience warrant them. Distinguish a copy/HTML review from a live behavioral check and a full launch-readiness audit; report only what the available evidence supports. Use [technical SEO](references/technical-seo.md) and [launch guidance](references/launch.md) for the applicable parts of a broader audit.
 
 ## Build and launch a landing page
 
@@ -37,7 +41,7 @@ When GA4 is requested, read [the Google Analytics module](references/google-anal
 
 Do this before generating keywords, inspecting competitors, making an audit table, or changing files. Do not run the workflow on assumed access.
 
-1. Parse the request into deliverables and evidence needs. At minimum, consider: qualitative search-result research; free numeric research with Google Trends and Google Keyword Planner; competitor traffic/rankings; domain availability; trademark clearance; repository/filesystem access; browser/HTTP access; live deployment access; Search Console; analytics; and any framework/build/deployment tool. For a landing-page launch, include Node/npm and access to the public Is Agentic service. Mark unrelated keyword metrics, competitor traffic, naming, and trademark research `NOT NEEDED` unless requested.
+1. Parse the request into deliverables and evidence needs. Consider capabilities relevant to that scope: supplied page text/HTML; repository; browser/HTTP; live deployment; Search Console and analytics; qualitative search results; Google Trends and Keyword Planner for numeric research; competitor traffic/rankings; domain and trademark lookup; and framework/build tools. For a landing-page launch, include Node/npm and access to the public Is Agentic service. For a copy-only audit, do not require live-site or numeric SEO access to analyze the supplied material; label behavior and performance unverified. Mark unrelated capabilities `NOT NEEDED`.
 2. Inventory the host's actually available skills, connectors, MCP servers, browser tools, repository tools, and authenticated accounts. An installed skill or connector is not the same as a usable connection. Use read-only capability checks or a harmless metadata probe where supported. Do not guess tool names, claim a vendor connection exists, or make a paid/mutating call as a probe.
 3. Write a compact capability matrix before the first dependent step. Use `AVAILABLE`, `AVAILABLE WITH LIMITS`, `NOT AVAILABLE`, `NOT NEEDED`, or `PENDING USER SETUP`. Include the exact evidence each available capability can produce and its limitations. For example, web search can support qualitative SERP observations but cannot establish monthly volume; Google Trends shows relative interest, while Keyword Planner supplies Google's volume ranges/metrics; a registrar lookup can report current registration status but cannot clear a trademark.
 4. Gate the workflow. If a requested deliverable requires a missing capability, stop that dependent deliverable before research begins and tell the user what is needed: connect an already-supported tool, install an appropriate skill/connector/MCP, or provide a sanitized export. Do not invent a connector, silently substitute a weaker source, or proceed as if the result will be available later. Offer a clearly labeled qualitative/provisional mode only if it still helps and the user chooses it.
@@ -47,7 +51,7 @@ Do not ask the user to install every possible integration. Request only the capa
 
 For numeric SEO research, prefer the free Google workflow: Google Trends for directionality/seasonality and Google Keyword Planner for volume ranges and related ideas. Keyword Planner access may require a completed Google Ads account setup and billing information even when the user does not intend to run ads. If the user has no eligible Google Ads account, say so before research and offer Trends-only qualitative research, a user-supplied Planner export, or setup instructions. Do not substitute paid SEO tools unless the user asks.
 
-For a new task, the first progress message/report must contain: requested deliverables, the capability matrix, blocked deliverables, and the exact next choices (`connect`, `provide export`, `run qualitative-only`, or `omit`). Do not generate the keyword list, competitor table, domain list, or launch verdict before this gate is resolved.
+For a new task, the first progress message/report must contain: requested deliverables, the capabilities relevant to them, any blocked deliverables, and the exact next choice if setup is needed (`connect`, `provide export`, `run qualitative-only`, or `omit`). Keep a simple page audit's preflight brief. Do not generate a keyword list, competitor table, domain list, or launch verdict before their required evidence gate is resolved.
 
 ## Establish context and evidence
 
@@ -110,6 +114,6 @@ Summarize changes, verification, remaining blockers, and the next owner/action. 
 
 ## Keep the output founder-friendly
 
-Lead with a compact **Decision** section: `READY`, `BLOCKED`, or `READY WITH RISKS`; the top three actions; and the exact user decision/setup needed. Follow with a short **Findings** list ordered P0/P1/P2. Each finding should contain: `What`, `Why it matters`, `Status/evidence`, and `Action`.
+Lead with a compact **Decision** section: `READY`, `BLOCKED`, or `READY WITH RISKS` for launch-readiness work; `AUDIT COMPLETE` or `LIMITED AUDIT` for an audit that does not establish launch readiness. Give the top three actions and exact user decision/setup needed. Follow with a short **Findings** list ordered P0/P1/P2. Each finding should contain: `What`, `Why it matters`, `Status/evidence`, and `Action`.
 
 Offer an action for every actionable finding: say `I can fix this now` for authorized reversible code/content work, or `You need to ...` for credentials, account setup, legal facts, domain purchases, DNS, deployment, or other user-controlled actions. Do not bury these in a long table. Keep trademark/name notes to 2–3 lines unless the user explicitly requests a deeper clearance review. Put detailed evidence, source URLs, and full tables in the saved report; keep the chat response scannable with short bullets and selective **bold** text.

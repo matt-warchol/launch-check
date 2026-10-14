@@ -4,7 +4,7 @@ Copy into the project's output location and fill only the applicable sections. B
 
 ## Decision summary
 
-**Status:** [READY / BLOCKED / READY WITH RISKS]
+**Status:** [READY / BLOCKED / READY WITH RISKS for launch readiness; AUDIT COMPLETE / LIMITED AUDIT for audit-only work]
 
 **Top three actions:**
 
@@ -51,9 +51,29 @@ Do not use `UNVERIFIED` here for an unattempted missing prerequisite. Use `NOT R
 
 For each selected page: proposed title, description, H1, content sections, source/proof requirements, and any unresolved product claims. Add a domain/name table only if that work was requested, with provider, timestamp, status, and quoted cost terms.
 
+## Conversion audit (when requested)
+
+- Audit input and coverage: [text / HTML / repository / live rendered site / analytics; URLs, versions, viewports, funnel steps]
+- Audience, offer, primary and secondary conversions: [known facts and assumptions]
+- Message and page flow: [what the visitor sees; consistency across sections]
+- Friction, trust, and objections: [observed behavior and missing source facts]
+- Search and AI readability: [observed page facts; technical checks only when access permits]
+
+| CTA location / viewport | Exact copy | Destination / observed result | Commitment | Issue and evidence | Proposed copy or action | Reason |
+| --- | --- | --- | --- | --- | --- | --- |
+| [hero / desktop] | [verbatim] | [URL / result / not tested] | [low / medium / high] | [observation or none] | [specific proposal] | [why it better matches the actual offer] |
+
+List each visible conversion CTA instance in the audited scope, including meaningful mobile or sticky variants. State any coverage limits. This is an inventory, not a measured conversion score.
+
+| Bucket | Priority | Finding and evidence | Recommended action or test hypothesis | Success signal | Owner |
+| --- | --- | --- | --- | --- | --- |
+| [FIX / TEST / BUILD / MONITOR] | [P0/P1/P2] | [observed / inferred] | [specific action] | [observable outcome, where applicable] | [owner] |
+
+Do not imply that an A/B test has enough traffic, a proposed CTA will outperform the original, or an SEO page has measured demand without supporting data.
+
 ## Findings and verification
 
-Priorities: **P0** immediate exposure or critical failure; **P1** launch-blocking for the agreed scope; **P2** improvement that can be scheduled. Severity depends on context, not a tool's raw score.
+Priorities: **P0** immediate exposure or critical failure; **P1** high-impact issue or launch blocker for the agreed scope; **P2** improvement that can be scheduled. In audit-only work, do not label a copy preference as a launch blocker. Severity depends on context, not a tool's raw score.
 
 | ID | Priority | What / why it matters | Status and evidence | Action: fix now or user action | Owner |
 | --- | --- | --- | --- | --- |

@@ -1,5 +1,12 @@
 # Validation record
 
+## 1.5.0 update — 2026-10-14
+
+- Package/resource/link validator: PASS. Skill-creator validator: PASS. Diff whitespace check: PASS.
+- Manual instruction review: text/HTML audits stay within visible evidence; live funnel and analytics results require their own access; the CTA inventory covers the stated sample; B2B/agency criteria apply only to relevant buyers; recommendations separate observations from hypotheses and do not promise uplift.
+- The audit guide and report template were checked against the README invocation examples and existing technical SEO, launch, GA4, and legal-page modules. The 1.4.0 legal resources remain in the package.
+- No live website was audited and no independent agent behavior or conversion outcome was measured for this update. Validation establishes package consistency, not audit effectiveness.
+
 ## 1.4.0 update — 2026-10-10
 
 - Package/resource/link validator: PASS. Skill-creator validator: PASS. Diff whitespace check: PASS.
