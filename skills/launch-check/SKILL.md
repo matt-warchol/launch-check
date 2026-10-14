@@ -2,7 +2,7 @@
 name: launch-check
 description: Build landing pages, research SEO, audit conversion and launch readiness, or update the installed launch-check (launch-skill) from its GitHub source. Use for page/site audits, landing-page builds, authorized fixes, launches, and requests to update this skill; not for unrelated development.
 metadata:
-  version: "1.8.0"
+  version: "1.9.0"
 ---
 
 # Launch Check
@@ -27,11 +27,11 @@ Infer the mode from the request. A single new page does not require a rebrand or
 
 ## Audit a page or site
 
-Read [the audit module](references/audit.md) for audit requests. It covers messaging, CTA hierarchy, page experience, conversion friction, trust, search/AI readability, and a concrete action plan. For a public page audit, include [the Is Agentic report and its copied improvement prompt](references/is-agentic.md) in the audit output. Apply B2B, agency, or SaaS buying criteria only when the product and audience warrant them. Distinguish a copy/HTML review from a live behavioral check and a full launch-readiness audit; report only what the available evidence supports. Use [technical SEO](references/technical-seo.md) and [launch guidance](references/launch.md) for the applicable parts of a broader audit.
+Read [the audit module](references/audit.md) for audit requests. It covers messaging, CTA hierarchy, page experience, conversion friction, trust, search/AI readability, [footer structure](references/footer.md), and a concrete action plan. For a public page audit, include [the Is Agentic report and its copied improvement prompt](references/is-agentic.md) in the audit output. Apply B2B, agency, or SaaS buying criteria only when the product and audience warrant them. Distinguish a copy/HTML review from a live behavioral check and a full launch-readiness audit; report only what the available evidence supports. Use [technical SEO](references/technical-seo.md) and [launch guidance](references/launch.md) for the applicable parts of a broader audit.
 
 ## Build and launch a landing page
 
-Read [the landing-page checklist](references/landing-page.md) for landing-page builds and launches. It adds brief, copy, trust, readability, conversion, release, and public verification checks to the existing SEO and launch guidance. Preserve an existing site's visual design unless redesign is requested. Research depth and page count follow the user's scope.
+Read [the landing-page checklist](references/landing-page.md) for landing-page builds and launches. It adds brief, copy, trust, readability, conversion, [footer structure](references/footer.md), release, and public verification checks to the existing SEO and launch guidance. Preserve an existing site's visual design unless redesign is requested. Research depth and page count follow the user's scope.
 
 Include the [Is Agentic workflow](references/is-agentic.md) in public-page audits, landing-page launch verification, and requested agent-readiness checks. Use the canonical public URL, record timestamp and evidence, and distinguish a cached report from a post-release scan. Apply relevant findings within authorization; do not build nonexistent APIs to raise a score. An audit-only request does not authorize fixes or deployment.
 

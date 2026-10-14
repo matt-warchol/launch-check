@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.0 — 2026-10-14
+
+- Added a footer structure audit for existing and new sites: real company/contact/legal destinations, useful topic groups, link checks, and mobile/keyboard access.
+- Made preserve-first recommendations and a concise proposed link map part of audit output and release review.
+- Clarified that a footer Sitemap link and `llms.txt` are optional; XML sitemap discovery is checked separately.
+
 ## 1.8.0 — 2026-10-14
 
 - Added a self-contained GitHub update workflow to the skill, including the source repository, branch, install locations, and “launch-skill” alias.

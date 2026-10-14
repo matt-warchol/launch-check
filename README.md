@@ -2,7 +2,7 @@
 
 An instruction-based Agent Skill for building landing pages, researching search demand, auditing conversion and technical SEO, and verifying website launches, including Is Agentic readiness.
 
-**Version:** 1.8.0 · **Reviewed:** 2026-10-14 · **Distribution:** portable skill folder and GitHub source repository.
+**Version:** 1.9.0 · **Reviewed:** 2026-10-14 · **Distribution:** portable skill folder and GitHub source repository.
 
 The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, MCP server, or runtime script; IndexNow setup uses a site-specific verification key unless the platform manages it.
 
@@ -67,6 +67,7 @@ In another Agent Skills host, use that host's skill-selection convention and the
 - Reviews the offer, audience fit, message consistency, CTA hierarchy, page flow, friction, trust, and relevant buyer objections.
 - Inventories each visible conversion CTA in the audited scope: placement, exact copy, destination/result, commitment, issue, and suggested action.
 - Checks search and AI readability; with live access, reviews conversion paths, accessibility, status codes, canonical URLs, sitemap/robots, metadata, social images, and applicable structured data.
+- Audits footer structure and real destinations, then proposes the smallest useful change: keep sound groups, fix weak links, and add About/Contact/Privacy/Terms or topic links where relevant. It reports a short proposed link map before material footer changes are published. XML sitemaps are checked separately; footer Sitemap and `llms.txt` links are optional.
 - For a public page, opens its Is Agentic report, copies the selected **Prompt to improve** into the audit output, and maps applicable findings to fixes. The report and copied prompt are labeled with scan time and source URL.
 - Checks HTTPS, privacy/tracking, and legal-page facts when in scope. Groups recommendations into **FIX / TEST / BUILD / MONITOR** with evidence and priorities.
 - Separates observations from hypotheses. A text-only audit does not claim live behavior, measured conversion lift, or launch readiness.
@@ -226,6 +227,7 @@ skills/launch-check/
   agents/openai.yaml          Codex presentation metadata
   references/research.md      Demand, intent, competitors, domains
   references/audit.md         Conversion, messaging, CTA, trust, action plan
+  references/footer.md        Footer structure, links, and preserve-first fixes
   references/technical-seo.md Indexing, metadata, AI search, experience
   references/launch.md        Privacy, security, telemetry, release
   references/landing-page.md  Build-to-production checklist

@@ -58,6 +58,7 @@ For each selected page: proposed title, description, H1, content sections, sourc
 - Message and page flow: [what the visitor sees; consistency across sections]
 - Friction, trust, and objections: [observed behavior and missing source facts]
 - Search and AI readability: [observed page facts; technical checks only when access permits]
+- Footer structure: [inspected URL/template and viewports; current groups and live destinations; keep/fix/add/remove; concise proposed link map; legal facts or missing pages; sitemap and optional llms.txt status]
 
 | CTA location / viewport | Exact copy | Destination / observed result | Commitment | Issue and evidence | Proposed copy or action | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
