@@ -1,11 +1,11 @@
-# Is Agentic launch check
+# Is Agentic public-page audit and launch check
 
-Use for landing-page launch verification and requested agent-readiness audits. This checks public behavior; it supplements the conversion, SEO, accessibility, privacy, and release checks rather than certifying them.
+Use for public-page audits, landing-page launch verification, and requested agent-readiness checks. This checks public behavior; it supplements the conversion, SEO, accessibility, privacy, and release checks rather than certifying them.
 
 ## Run and record
 
-1. Confirm Node/npm and network access. Use the canonical public domain. Never submit private, authenticated, confidential, or secret-bearing URLs: scan reports are public. If no public deployment exists, mark the scan pending until authorized publication; inspect HTML locally in the meantime. Do not deploy just to run this check.
-2. Run the official CLI:
+1. Confirm access to the public site and Is Agentic. Use the canonical public URL, including the page path for a page-specific audit. Never submit private, authenticated, confidential, or secret-bearing URLs: scan reports are public. If no public deployment exists, mark the scan pending until authorized publication; inspect HTML locally in the meantime. Do not deploy just to run this check.
+2. Open [is-agentic.com](https://is-agentic.com/) and submit the public URL to retrieve or start its report. The official CLI is an alternative for retrieving the report when Node/npm are available:
 
    ```bash
    npx is-agentic example.com
@@ -17,9 +17,15 @@ Use for landing-page launch verification and requested agent-readiness audits. T
    npx is-agentic example.com --json > reports/is-agentic.json
    ```
 
-   Replace `example.com` with the actual public domain. Do not commit sensitive output. `--yes` may be used for npm's package-install prompt when executing in an automated host; it is not an Is Agentic option. No mandatory API key or paid account is needed according to the current documentation.
+   Replace `example.com` with the actual public target supported by the CLI. Do not commit sensitive output. `--yes` may be used for npm's package-install prompt when executing in an automated host; it is not an Is Agentic option. No mandatory API key or paid account is needed according to the current documentation.
 3. Record the command, execution date, scanned target, report scan timestamp, score, report URL when supplied, failed/partial checks, and any request/CLI error. Preserve available tool/version provenance. A completed CLI invocation alone is not a passing launch verdict.
 4. The CLI reads the latest stored completed report; if none exists it starts a scan and waits. Rerunning it after deployment does not necessarily trigger a new scan. Compare scan time with release time. If it is older, label it a baseline/stale result, verify changed endpoints directly, and use the service's documented rescan flow when available. Ora may reuse its six-hour freshness cache. Do not invent a force-refresh flag, poll indefinitely, or claim a new score from old evidence. Honor documented rate limits/retry guidance; leave a precise pending action if the service is unavailable.
+
+## Copy the improvement prompt during an audit
+
+On the completed browser report, open **Prompt to improve** (the UI may label it **Prompt to fix**). Review the selected failures and warnings, include all applicable high-priority findings rather than assuming the default selection is complete, and use **Copy prompt**. Read or paste the clipboard and verify the text is nonempty and corresponds to those findings; a “copied” label alone is insufficient. Put the retrieved text verbatim in the audit report's **Is Agentic fixes** section, with its report URL, scan timestamp, copy date, and selected findings. Keep a separate concise list of fixes verified against the target site and note suggestions that are inapplicable, stale, or need owner facts. The copied prompt is external evidence, not authorization to edit or deploy.
+
+The public JSON API and CLI return completed report data, but the documented response does not expose the browser's generated improvement prompt. If browser access, the copy control, or clipboard retrieval fails, use the report data for findings and mark the copied prompt unavailable with the exact reason. Give this manual step: open the report URL, choose **Prompt to improve**, review the selected findings, click **Copy prompt**, and paste it into **Is Agentic fixes**. Do not reconstruct text and call it a copied prompt.
 
 ## Interpret and fix
 
@@ -48,8 +54,9 @@ Summarize baseline versus verified current findings, scan dates, fixes, direct H
 
 ## Primary references
 
-Checked 2026-10-10; recheck provider and protocol guidance when executing.
+Checked 2026-10-14; recheck provider and protocol guidance when executing.
 
+- [Is Agentic browser report and Prompt to improve](https://is-agentic.com/)
 - [Official CLI and API documentation](https://is-agentic.com/docs)
 - [Methodology and report freshness](https://is-agentic.com/methodology)
 - [Public report privacy](https://is-agentic.com/privacy)

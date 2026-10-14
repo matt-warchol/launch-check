@@ -11,7 +11,7 @@ No release archives are maintained in the repository. The script below can build
 1. Choose the license and copyright-holder attribution. No open-source permission is assumed. If choosing MIT or another license, add its complete text to a root `LICENSE`, copy it into the distributed skill folder, and update frontmatter and the licensing notices. Use the rights holder's actual chosen name; do not guess it from a local username.
 2. Review the validation report and perform a representative runtime trial on a disposable project. This is a recommendation to substantiate a stable-release claim, not a claim that the current package has passed an independent agent test.
 3. Confirm the intended support route and release notes; the source repository is already named above.
-4. Recheck dated source guidance if the publication date differs materially from this review. Set the release version consistently in skill metadata and the changelog; the current source version is `1.5.0`.
+4. Recheck dated source guidance if the publication date differs materially from this review. Set the release version consistently in skill metadata and the changelog; the current source version is `1.6.0`.
 5. Run validation, rebuild archives after any changes, and inspect their contents for unintended local data. Do not publish the input attachment unless the owner separately wants it included.
 
 ## Validate locally
@@ -45,7 +45,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 root = Path.cwd()
 skill = root / "skills/launch-check"
-version = "1.5.0"  # update with the release metadata
+version = "1.6.0"  # update with the release metadata
 assert (skill / "SKILL.md").is_file()
 with ZipFile(root.parent / f"launch-check-{version}.zip", "w", ZIP_DEFLATED) as z:
     for p in sorted(skill.rglob("*")):

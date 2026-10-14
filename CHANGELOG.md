@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0 — 2026-10-14
+
+- Made the Is Agentic public-page report part of audit mode and added its copied, selected improvement prompt to the audit output.
+- Added source URL, scan freshness, selected findings, and an evidence-checked fix list; unavailable prompts are reported rather than fabricated.
+- Updated the audit instructions, report template, usage docs, and validation record.
+
 ## 1.5.0 — 2026-10-14
 
 - Added a dedicated conversion audit module for messaging, CTA hierarchy, page flow, friction, trust, and search/AI readability.

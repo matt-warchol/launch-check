@@ -2,7 +2,7 @@
 name: launch-check
 description: Build landing pages, research SEO, and audit conversion, search visibility, and launch readiness, including privacy/terms/GDPR drafts and GA4. Use for page or site audits, landing-page builds, authorized fixes, and launches; not for unrelated app development or standalone legal/security audits.
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
 ---
 
 # Launch Check
@@ -21,13 +21,13 @@ Infer the mode from the request. A single new page does not require a rebrand or
 
 ## Audit a page or site
 
-Read [the audit module](references/audit.md) for audit requests. It covers messaging, CTA hierarchy, page experience, conversion friction, trust, search/AI readability, and a concrete action plan. Apply B2B, agency, or SaaS buying criteria only when the product and audience warrant them. Distinguish a copy/HTML review from a live behavioral check and a full launch-readiness audit; report only what the available evidence supports. Use [technical SEO](references/technical-seo.md) and [launch guidance](references/launch.md) for the applicable parts of a broader audit.
+Read [the audit module](references/audit.md) for audit requests. It covers messaging, CTA hierarchy, page experience, conversion friction, trust, search/AI readability, and a concrete action plan. For a public page audit, include [the Is Agentic report and its copied improvement prompt](references/is-agentic.md) in the audit output. Apply B2B, agency, or SaaS buying criteria only when the product and audience warrant them. Distinguish a copy/HTML review from a live behavioral check and a full launch-readiness audit; report only what the available evidence supports. Use [technical SEO](references/technical-seo.md) and [launch guidance](references/launch.md) for the applicable parts of a broader audit.
 
 ## Build and launch a landing page
 
 Read [the landing-page checklist](references/landing-page.md) for landing-page builds and launches. It adds brief, copy, trust, readability, conversion, release, and public verification checks to the existing SEO and launch guidance. Preserve an existing site's visual design unless redesign is requested. Research depth and page count follow the user's scope.
 
-Include the [Is Agentic workflow](references/is-agentic.md) in landing-page launch verification, or when agent-readiness checks are requested: `npx is-agentic <domain>`. Run it against the canonical public site, record timestamp and evidence, and distinguish a cached report from a post-release scan. Apply relevant findings within authorization; do not build nonexistent APIs to raise a score. An audit-only request does not authorize fixes or deployment.
+Include the [Is Agentic workflow](references/is-agentic.md) in public-page audits, landing-page launch verification, and requested agent-readiness checks. Use the canonical public URL, record timestamp and evidence, and distinguish a cached report from a post-release scan. Apply relevant findings within authorization; do not build nonexistent APIs to raise a score. An audit-only request does not authorize fixes or deployment.
 
 ## Legal pages for each website
 
@@ -41,7 +41,7 @@ When GA4 is requested, read [the Google Analytics module](references/google-anal
 
 Do this before generating keywords, inspecting competitors, making an audit table, or changing files. Do not run the workflow on assumed access.
 
-1. Parse the request into deliverables and evidence needs. Consider capabilities relevant to that scope: supplied page text/HTML; repository; browser/HTTP; live deployment; Search Console and analytics; qualitative search results; Google Trends and Keyword Planner for numeric research; competitor traffic/rankings; domain and trademark lookup; and framework/build tools. For a landing-page launch, include Node/npm and access to the public Is Agentic service. For a copy-only audit, do not require live-site or numeric SEO access to analyze the supplied material; label behavior and performance unverified. Mark unrelated capabilities `NOT NEEDED`.
+1. Parse the request into deliverables and evidence needs. Consider capabilities relevant to that scope: supplied page text/HTML; repository; browser/HTTP; live deployment; Search Console and analytics; qualitative search results; Google Trends and Keyword Planner for numeric research; competitor traffic/rankings; domain and trademark lookup; and framework/build tools. For a public-page audit or landing-page launch, include browser access to the public Is Agentic report and Node/npm only when using its CLI. For a copy-only audit, do not require live-site or numeric SEO access to analyze the supplied material; label behavior and performance unverified. Mark unrelated capabilities `NOT NEEDED`.
 2. Inventory the host's actually available skills, connectors, MCP servers, browser tools, repository tools, and authenticated accounts. An installed skill or connector is not the same as a usable connection. Use read-only capability checks or a harmless metadata probe where supported. Do not guess tool names, claim a vendor connection exists, or make a paid/mutating call as a probe.
 3. Write a compact capability matrix before the first dependent step. Use `AVAILABLE`, `AVAILABLE WITH LIMITS`, `NOT AVAILABLE`, `NOT NEEDED`, or `PENDING USER SETUP`. Include the exact evidence each available capability can produce and its limitations. For example, web search can support qualitative SERP observations but cannot establish monthly volume; Google Trends shows relative interest, while Keyword Planner supplies Google's volume ranges/metrics; a registrar lookup can report current registration status but cannot clear a trademark.
 4. Gate the workflow. If a requested deliverable requires a missing capability, stop that dependent deliverable before research begins and tell the user what is needed: connect an already-supported tool, install an appropriate skill/connector/MCP, or provide a sanitized export. Do not invent a connector, silently substitute a weaker source, or proceed as if the result will be available later. Offer a clearly labeled qualitative/provisional mode only if it still helps and the user chooses it.

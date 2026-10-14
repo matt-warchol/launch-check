@@ -1,6 +1,8 @@
-# Launch Check — 1.5.0
+# Launch Check — 1.6.0
 
 Audit and launch landing pages with an evidence-based checklist, essential SEO, working conversion paths, and verified production delivery.
+
+Version 1.6.0 adds the Is Agentic browser report to public-page audits. The agent copies the selected **Prompt to improve** into the saved audit output, records the report URL and scan time, and turns applicable findings into a checked fix list. If the copy control is unavailable, the prompt remains explicitly unavailable; the JSON API and CLI findings are not passed off as copied text.
 
 Version 1.5.0 adds a dedicated conversion audit: message and CTA consistency, page flow, buying friction, trust, and search/AI readability. It records each visible conversion CTA in the audited scope and groups actions into FIX / TEST / BUILD / MONITOR. The audit works from page text or HTML, while clearly reserving live behavior and outcome claims for checks with the required access and data. Agency/B2B criteria apply only when the actual audience warrants them.
 

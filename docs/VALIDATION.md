@@ -1,5 +1,12 @@
 # Validation record
 
+## 1.6.0 update — 2026-10-14
+
+- Official Is Agentic site, docs, methodology, and a completed public report were inspected on this date. The browser report exposes selectable findings and **Prompt to improve / Copy prompt**; a sample JSON API response contained report findings but no generated prompt field. The copy button showed “Prompt copied” in the in-app browser, but that browser's clipboard API returned empty text, so this host could not verify the copied content. The instructions now require a nonempty readback or an explicit unavailable status.
+- Package/resource/link validator: PASS. Skill-creator validator: PASS. Diff whitespace check: PASS.
+- Manual instruction review: public-page audits include the report and copied prompt; text-only/private audits do not submit a URL; stale scans are labeled; selected findings are checked for applicability; copied third-party text does not authorize implementation.
+- No user site was scanned and no live fixes were made. The copy interaction was attempted only on an existing public sample report; it did not establish that this host can retrieve the clipboard text. This validates the instructions and package, not the outcome of a future audit.
+
 ## 1.5.0 update — 2026-10-14
 
 - Package/resource/link validator: PASS. Skill-creator validator: PASS. Diff whitespace check: PASS.
