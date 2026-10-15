@@ -6,6 +6,8 @@ An instruction-based Agent Skill for building landing pages, researching search 
 
 The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, MCP server, or runtime script; IndexNow setup uses a site-specific verification key unless the platform manages it.
 
+**Next:** [Roadmap](ROADMAP.md) — planned Search Console/GA4 setup automation and ImprovMX `hi@domain` forwarding for newly deployed domains. These are tracked as to-dos; they are not active skill behavior yet.
+
 ## Quick start
 
 Install the `skills/launch-check` folder in your agent's supported skill location. For current Codex, copy it into the target project's `.agents/skills/` directory or your user-level `~/.agents/skills/` directory. Keep its name and supporting files together. Avoid installing a second copy with the same skill name. Codex normally detects changes; restart if it does not appear. These locations follow [official installation guidance](https://learn.chatgpt.com/docs/build-skills), checked 2026-09-29.
