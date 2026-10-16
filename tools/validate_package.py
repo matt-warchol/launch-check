@@ -21,7 +21,7 @@ def validate(root):
                 "references/google-analytics.md", "references/legal-pages.md",
                 "assets/privacy-policy-template.md", "assets/terms-of-use-template.md",
                 "assets/gdpr-notice-template.md",
-                "assets/report-template.md", "scripts/update_from_github.py", "LICENSE-NOTICE.md"]
+                "assets/report-template.md", "scripts/update_from_github.py", "scripts/ui_layout_audit.py", "LICENSE-NOTICE.md"]
     for name in required:
         if not (skill / name).is_file():
             errors.append(f"Missing skill file: {name}")

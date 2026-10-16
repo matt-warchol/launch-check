@@ -32,6 +32,7 @@ Measure available referral traffic and conversions, and record any sampled AI an
 
 ## Experience and verification
 
+- Run the visual layout audit when the site can be rendered: `python3 scripts/ui_layout_audit.py --dir <build-folder> --paths / /pricing` (or `--url <public URLs>`). It opens each page at 390, 768 and 1280 px and flags sideways scrolling, text pressed against its box edge, boxes stuck together, text sticking out, text under 11 px and tap targets under 44 px. Treat output as leads: confirm each with a screenshot before reporting, and note false positives (honeypot fields, intentionally scrolling code blocks). Needs `pip install playwright && playwright install chromium`.
 - Check mobile navigation, content overflow, forms, error states, keyboard operation, visible focus, labels, useful alternative text, and basic contrast. Automated accessibility checks do not establish full conformance.
 - Inspect the main conversion from entry to meaningful success; a button click alone may not represent a completed signup/export/payment.
 - Record performance tool, URL, date, device/network profile, and lab versus field data. Current Core Web Vitals targets are LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1 at the 75th percentile, assessed for mobile and desktop. New sites may lack field data. A Lighthouse score does not prove field INP or a Core Web Vitals pass.

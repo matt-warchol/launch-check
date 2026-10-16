@@ -2,7 +2,7 @@
 name: launch-check
 description: Build landing pages, research SEO, audit conversion and launch readiness, or update the installed launch-check (launch-skill) from its GitHub source. Use for page/site audits, landing-page builds, authorized fixes, launches, and requests to update this skill; not for unrelated development.
 metadata:
-  version: "1.9.0"
+  version: "1.10.0"
 ---
 
 # Launch Check
@@ -87,7 +87,7 @@ Read [technical SEO guidance](references/technical-seo.md) for audits or impleme
 - Verify status codes, renderable content and links, robots rules, `noindex` directives, canonical URLs, redirects, sitemap contents, and internal discovery. Check the response as served as well as the rendered page where tools permit.
 - Preserve existing metadata architecture. Use unique, accurate titles and descriptions, social metadata, accessible headings, useful image text, and supported structured data matching visible facts.
 - Make content useful and attributable: show product capabilities honestly, answer real questions, and support factual claims. No ranking or AI-citation guarantees. Do not add special AI files or schema as a presumed requirement.
-- Test representative mobile layouts, accessibility, performance, and the main conversion path. Separate laboratory observations from field performance data.
+- Test representative mobile layouts (run `scripts/ui_layout_audit.py`, see technical SEO), accessibility, performance, and the main conversion path. Separate laboratory observations from field performance data.
 - Verify global navigation: the logo/wordmark in the upper-left (or site's primary brand link) should take users to the canonical main page/home route, have a meaningful accessible name, and work with keyboard input. Check it on desktop and mobile; report the actual target and status.
 - Verify link previews before launch: `og:title`, `og:description`, `og:image`, `og:url`, and an appropriate `twitter:card` where relevant. Use absolute, publicly reachable image URLs and check the rendered result with a preview inspector such as [opengraph.xyz](https://www.opengraph.xyz/) when accessible. If that inspector blocks automated access, inspect the raw response and give the user the manual URL/check instead of claiming a preview pass.
 

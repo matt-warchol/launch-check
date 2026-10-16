@@ -2,7 +2,7 @@
 
 An instruction-based Agent Skill for building landing pages, researching search demand, auditing conversion and technical SEO, and verifying website launches, including Is Agentic readiness.
 
-**Version:** 1.9.0 · **Reviewed:** 2026-10-14 · **Distribution:** portable skill folder and GitHub source repository.
+**Version:** 1.10.0 · **Reviewed:** 2026-10-16 · **Distribution:** portable skill folder and GitHub source repository.
 
 The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, MCP server, or runtime script; IndexNow setup uses a site-specific verification key unless the platform manages it.
 

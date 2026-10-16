@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.0 — 2026-10-16
+
+- Added `scripts/ui_layout_audit.py`: a Playwright layout audit (sideways scroll, cramped text in boxes, boxes stuck together, text overflow, tiny text, small tap targets at 390/768/1280 px) for built folders or live URLs.
+- Technical SEO and launch checks now point to it; results are leads to confirm by eye, not proof.
+
 ## 1.9.0 — 2026-10-14
 
 - Added a footer structure audit for existing and new sites: real company/contact/legal destinations, useful topic groups, link checks, and mobile/keyboard access.
