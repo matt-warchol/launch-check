@@ -16,7 +16,7 @@ Use for a new landing page or a launch of an existing one. Keep the existing bra
 - [ ] Keep microanimations subtle, honor reduced motion, and ensure content remains visible if animation scripts fail.
 - [ ] Test the primary contact/booking/form path, brand link to home, navigation, downloads, and interactive examples. Distinguish a CTA click from an actual delivered lead or booking. Avoid sending real messages as a casual test without authorization.
 - [ ] Use [the footer structure check](footer.md): preserve a useful existing footer, verify real About/Contact/Privacy/Terms destinations as applicable, group only relevant links, and check mobile and keyboard access. Show a concise proposed link map before publishing material changes.
-- [ ] Verify metadata, canonical URLs, sitemap, robots, social image, real 404s, and applicable structured data using the linked SEO guidance. Check publicly served output as well as source files.
+- [ ] Follow [sitemap and search-discovery guidance](sitemaps.md): reuse or generate the sitemap from actual published pages in this stack, check `robots.txt`, and verify the served XML after publication. Submit or confirm it in verified Google Search Console and Bing Webmaster Tools when account access is available; report each submission separately. Verify metadata, canonical URLs, social image, real 404s, and applicable structured data using the linked SEO guidance.
 - [ ] When GA4 is selected, use [the Google Analytics module](google-analytics.md) to reuse/create its property and stream, add tagging and agreed events, and verify actual receipt.
 - [ ] Verify privacy and measurement behavior in proportion to the actual integrations. An installed analytics package or enabled dashboard is not evidence of event delivery.
 

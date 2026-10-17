@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.11.0 — 2026-10-17
+
+- Added stack-aware automatic sitemap generation and post-publication Google Search Console/Bing Webmaster Tools submission checks.
+- Clarified truthful `lastmod`, canonical-only URLs, IndexNow versus Google, and ChatGPT crawler controls.
+
 ## 1.10.0 — 2026-10-16
 
 - Added `scripts/ui_layout_audit.py`: a Playwright layout audit (sideways scroll, cramped text in boxes, boxes stuck together, text overflow, tiny text, small tap targets at 390/768/1280 px) for built folders or live URLs.

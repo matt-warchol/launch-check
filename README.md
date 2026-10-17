@@ -2,7 +2,7 @@
 
 An instruction-based Agent Skill for building landing pages, researching search demand, auditing conversion and technical SEO, and verifying website launches, including Is Agentic readiness.
 
-**Version:** 1.10.0 · **Reviewed:** 2026-10-16 · **Distribution:** portable skill folder and GitHub source repository.
+**Version:** 1.11.0 · **Reviewed:** 2026-10-17 · **Distribution:** portable skill folder and GitHub source repository.
 
 The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, MCP server, or runtime script; IndexNow setup uses a site-specific verification key unless the platform manages it.
 
@@ -86,6 +86,7 @@ In another Agent Skills host, use that host's skill-selection convention and the
 - Verifies the correct repository, branch, hosting project, build settings, and rollback route.
 - Pushes/deploys when authorized; checks DNS, HTTPS, production conversion paths, and public resources.
 - Runs Is Agentic, checks report freshness, verifies analytics when selected, and gives an owner handoff.
+- Generates or reuses a sitemap from actual published pages, verifies the public XML and `robots.txt`, and submits or confirms the sitemap in Google Search Console and Bing Webmaster Tools when the correct verified accounts are accessible.
 - Sets up IndexNow notifications for new public sites meant for search discovery and verifies that later page publishes send automatically.
 - Checks legal-page facts/placeholders, publication readiness, links, and live responses.
 
@@ -235,6 +236,7 @@ skills/launch-check/
   references/landing-page.md  Build-to-production checklist
   references/is-agentic.md    CLI audit, freshness, fixes, verification
   references/indexnow.md      Publish hook, key, submission, verification
+  references/sitemaps.md      Automatic sitemap generation and search-engine submission
   scripts/update_from_github.py GitHub check/apply updater for personal installs
   references/google-analytics.md GA4 setup, consent, events, verification
   references/legal-pages.md   Privacy/terms/GDPR adaptation and delivery
