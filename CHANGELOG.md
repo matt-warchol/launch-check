@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.12.0 — 2026-10-17
+
+- Added `references/content-sites.md`: scheduled-publish triggers and link gating, build-time broken-link checks, Sources lists for legal/tax/platform claims, authorship without invented first-hand stories, audit-tool false positives, `lastmod` and overlap handling, and merge order for parallel PRs.
+- SKILL.md links the module for sites with guides, articles or tools.
+
 ## 1.11.0 — 2026-10-17
 
 - Added stack-aware automatic sitemap generation and post-publication Google Search Console/Bing Webmaster Tools submission checks.

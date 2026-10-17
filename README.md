@@ -2,7 +2,7 @@
 
 An instruction-based Agent Skill for building landing pages, researching search demand, auditing conversion and technical SEO, and verifying website launches, including Is Agentic readiness.
 
-**Version:** 1.11.0 · **Reviewed:** 2026-10-17 · **Distribution:** portable skill folder and GitHub source repository.
+**Version:** 1.12.0 · **Reviewed:** 2026-10-17 · **Distribution:** portable skill folder and GitHub source repository.
 
 The skill guides a coding/research agent using the tools available in its host. It is not a standalone crawler, SEO database, deployment service, or guarantee of rankings. It has no mandatory paid service, MCP server, or runtime script; IndexNow setup uses a site-specific verification key unless the platform manages it.
 
@@ -237,6 +237,7 @@ skills/launch-check/
   references/is-agentic.md    CLI audit, freshness, fixes, verification
   references/indexnow.md      Publish hook, key, submission, verification
   references/sitemaps.md      Automatic sitemap generation and search-engine submission
+  references/content-sites.md Guides, scheduled publishing, sources, authorship, parallel work
   scripts/update_from_github.py GitHub check/apply updater for personal installs
   references/google-analytics.md GA4 setup, consent, events, verification
   references/legal-pages.md   Privacy/terms/GDPR adaptation and delivery
