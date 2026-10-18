@@ -69,6 +69,8 @@ These are projects from [avo42](https://avo42.com/). They show different kinds o
 | [ReadNext](https://readnext-reading-room.wattmarchol.chatgpt.site/) | Helps pick one book to read next from an overflowing want-to-read shelf. |
 | [PlateWeek](https://plateweek.avo42.com/) | Turns a food video into recipes and a practical shopping list. |
 | [Armando](https://armando.avo42.com/) | Client management playbook and follow-through for agencies and consultancies. |
+| [AI Shift Field Guide](https://avo42.com/ai-shift/) | Plain-language guide to AI shifts in software, with a checklist for testing product ideas. |
+| [AI Markets, explained](https://avo42.com/ai-markets/) | A practical reading of AI spending, adoption, and where new products may fit. |
 
 ## How it handles SEO research
 
