@@ -12,7 +12,7 @@ After installation, paste `$launch-check` followed by your request into the codi
 - **Implement:** `$launch-check implement these fixes: [list]. Preserve the design; do not push or deploy.`
 - **Launch:** `$launch-check push the agreed changes to [repo/branch] and deploy to [host/project] at [domain]. Verify production and run Is Agentic.`
 
-The [README has complete copy-paste examples for all five modes](../README.md#copy-paste-examples-for-every-mode). The terminal command `npx is-agentic [domain]` is a separate public audit tool, not the command to build or deploy a page.
+The [complete usage guide has copy-paste examples for all five modes](USAGE.md#copy-paste-examples-for-every-mode). The terminal command `npx is-agentic [domain]` is a separate public audit tool, not the command to build or deploy a page.
 
 ## 1. Install or update
 
@@ -89,11 +89,11 @@ The module includes [neutral privacy/terms/GDPR templates and a checklist](../sk
 
 Provide the operator's legal name, address and relevant registration details, public/privacy contact, markets, and known data-processing facts. The agent inspects integrations and asks only for material unknowns: purposes, lawful bases, providers, retention, transfers, and actual consent controls. It does not copy Brainhub's identity, recruitment practices, provider list, or governing-law assumptions.
 
-Draft first while missing facts are pending. Before an authorized publication, resolve placeholders, reconcile the documents with actual behavior, and test public routes, links, and consent controls. A site-specific draft is not legal-compliance certification. The [README has a complete legal-pages prompt](../README.md#add-legal-pages-to-a-website).
+Draft first while missing facts are pending. Before an authorized publication, resolve placeholders, reconcile the documents with actual behavior, and test public routes, links, and consent controls. A site-specific draft is not legal-compliance certification. The [complete usage guide has a legal-pages prompt](USAGE.md#add-legal-pages-to-a-website).
 
 ## Optional: set up Google Analytics automatically
 
-Ask for the [GA4 autopilot workflow in the README](../README.md#google-analytics-on-autopilot). It works within Implement or Launch mode when you select Google Analytics; it is not mandatory for every website.
+Ask for the [GA4 autopilot workflow in the usage guide](USAGE.md#google-analytics-on-autopilot). It works within Implement or Launch mode when you select Google Analytics; it is not mandatory for every website.
 
 Supply the selected Analytics account/property, canonical URL, and event goals. For a new property, also supply the name, reporting time zone, and currency. Authorize property/stream creation and website deployment if you want the full setup. With account access, the agent checks for duplicates, reuses or creates the correct property/web stream, retrieves the measurement ID, adds tagging, and verifies events and consent.
 
