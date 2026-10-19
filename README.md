@@ -24,7 +24,7 @@
 ## What you can do with it
 
 - **Build:** turn a product brief into a landing page with a clear offer, working action, mobile layout, and basic search metadata.
-- **Research:** find audience questions and search intent, then map useful pages. It labels missing keyword volume instead of making up numbers.
+- **Research:** find audience questions, search intent, and the formats of leading pages (guide, table, calculator, tool), then map useful pages. It labels missing keyword volume instead of making up numbers.
 - **Audit:** check the message, every visible CTA, trust, footer links, accessibility, technical SEO, and AI readability. Get a short, prioritized list of fixes with evidence.
 - **Implement:** fix selected issues in the existing site without replacing a design that already works.
 - **Launch:** verify the deployed page, links, analytics when selected, sitemap, search submission where account access exists, and IndexNow for eligible new sites.
@@ -75,6 +75,12 @@ These are projects from [avo42](https://avo42.com/). They show different kinds o
 ## How it handles SEO research
 
 The default research path uses accessible, attributable sources. The agent checks intent and the actual search results, then turns promising topics into page briefs. Numeric volume or difficulty appears only when a connected source supplies it. **DataForSEO can add live keyword and SERP data**, but it is optional and may have its own cost; the skill does not pretend that it is connected by default.
+
+A brief now separates **why someone searched** from **what the leading pages let them do**. For example, a query about splitting startup costs might need an explanation *and* a calculator. The agent records the inspected result URLs and formats, then recommends a page format with a reason. If it cannot inspect the results, it labels the recommendation as a hypothesis.
+
+![Illustrative Launch Check page brief showing intent, result formats, a recommended calculator with an explanation, and the proposed page flow](assets/serp-format-brief-example.png)
+
+<sub>Illustrative output, not a live SERP audit or measured ranking opportunity.</sub>
 
 For search discovery, the launch workflow checks canonicals, `robots.txt`, generated sitemaps, and Google/Bing submission when the right accounts are available. IndexNow can notify participating engines about page changes. None of these steps guarantees indexing or ranking.
 

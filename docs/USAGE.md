@@ -142,13 +142,16 @@ Use when you need search opportunities, audience questions, or page briefs befor
 ```text
 $launch-check research SEO for an account-management product aimed at
 B2B agencies in [target country/language]. Keep our existing brand.
-Produce intent clusters and briefs for three useful pages, including
-suggested titles, headings, internal links, and calls to action.
+Produce intent clusters and briefs for three useful pages. For each,
+inspect the leading results and tell me whether they are guides,
+comparison tables, calculators, templates, or tools. Recommend a page
+format and explain why, then include titles, headings, internal links,
+and calls to action.
 Use free sources. First check which research tools are available.
 Do not invent search volumes or change website files.
 ```
 
-**You get:** sourced research, a page plan, and explicit data gaps. If numeric research needs an unavailable account, the agent explains the setup/export options before that work.
+**You get:** sourced research, a page plan with result formats and recommended page formats, and explicit data gaps. If numeric research needs an unavailable account, the agent explains the setup/export options before that work.
 
 ### 3. Audit — check an existing page or site
 

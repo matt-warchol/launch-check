@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.13.0 — 2026-10-19
+
+- Added a top-result format check to SEO research and substantial page rebuild audits. Briefs now separate search intent from page format, cite inspected organic results, and explain why the proposed guide, table, calculator, template, or tool fits the visitor's task.
+- Added format evidence to the report template and an illustrative brief image to the README. Uninspected results remain hypotheses.
+
 ## 1.12.0 — 2026-10-17
 
 - Added `references/content-sites.md`: scheduled-publish triggers and link gating, build-time broken-link checks, Sources lists for legal/tax/platform claims, authorship without invented first-hand stories, audit-tool false positives, `lastmod` and overlap handling, and merge order for parallel PRs.

@@ -2,7 +2,7 @@
 name: launch-check
 description: Build landing pages, research SEO, audit conversion and launch readiness, or update the installed launch-check (launch-skill) from its GitHub source. Use for page/site audits, landing-page builds, authorized fixes, launches, and requests to update this skill; not for unrelated development.
 metadata:
-  version: "1.12.0"
+  version: "1.13.0"
 ---
 
 # Launch Check
@@ -79,9 +79,9 @@ Use [the report template](assets/report-template.md) for substantial work. Save 
 Read [research guidance](references/research.md) when researching keywords, content, competitors, or names.
 
 - Start with the user's audience and task; distinguish informational, commercial investigation, transactional, and relevant navigational intent.
-- Collect a useful set of candidate queries, inspect actual search results when available, cluster by shared intent, and map each cluster to a useful destination page. Explain priorities using business fit, intent match, demand evidence, and ability to compete.
+- Collect a useful set of candidate queries, inspect actual search results when available, cluster by shared intent, and map each cluster to a useful destination page. For priority queries, distinguish why people search (intent) from what the leading pages let them do (format: guide, calculator, comparison table, template, tool, etc.). Explain priorities using business fit, intent match, demand evidence, and ability to compete.
 - Every numeric demand or difficulty claim needs an identifiable provider/export and its geography, date range, and settings. Missing volume is `unknown`, never an invented number or zero. Search results alone do not establish volume. Advertising competition is not organic ranking difficulty.
-- Produce a page brief for each priority destination: query cluster, intent, URL, distinctive value, title/H1, useful sections, evidence required, conversion action, and internal links. Avoid thin pages for every keyword variation.
+- Produce a page brief for each priority destination: query cluster, intent, observed top-result formats and source URLs, recommended page format with a reason, URL, distinctive value, title/H1, useful sections or interactions, evidence required, conversion action, and internal links. When search results cannot be checked, label the format a hypothesis. Do not copy the majority format blindly or promise ranking from it. Avoid thin pages for every keyword variation.
 - Naming and domain research are optional. Only investigate them when requested or the project genuinely lacks them. Domain lookup results are time-sensitive and are not trademark clearance or purchase authorization.
 
 ## Prepare public pages

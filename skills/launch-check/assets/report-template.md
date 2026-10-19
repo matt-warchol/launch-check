@@ -39,9 +39,9 @@ Do not use `UNVERIFIED` here for an unattempted missing prerequisite. Use `NOT R
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [query] | [intent] | [market] | [range/estimate/unknown] | [URL/export] | [period/settings or unknown] | [date] | [reason] |
 
-| Observed query | Date and locale limitations | Search result/competitor URLs | Dominant format | User need or gap | Implication |
+| Observed query | Date and locale limitations | Inspected organic URLs | Formats and what each page lets users do | User need or gap | Format implication |
 | --- | --- | --- | --- | --- | --- |
-| [query] | [context] | [URLs] | [format] | [evidence] | [opportunity] |
+| [query] | [context] | [URLs, or snippets-only] | [guide / table / calculator / template / tool; verified or snippet-only] | [evidence] | [format to consider and why] |
 
 ## Page map and briefs
 
@@ -49,7 +49,7 @@ Do not use `UNVERIFIED` here for an unattempted missing prerequisite. Use `NOT R
 | --- | --- | --- | --- | --- | --- | --- |
 | [URL] | [cluster] | [state] | [value] | [action] | [source/destination] | [reason] |
 
-For each selected page: proposed title, description, H1, content sections, source/proof requirements, and any unresolved product claims. Add a domain/name table only if that work was requested, with provider, timestamp, status, and quoted cost terms.
+For each selected page: proposed title, description, H1, observed top-result format mix with inspected URLs, chosen primary format and rationale, content sections or tool interactions, source/proof requirements, and any unresolved product claims. Say `format hypothesis — SERP not inspected` if applicable. Add a domain/name table only if that work was requested, with provider, timestamp, status, and quoted cost terms.
 
 ## Conversion audit (when requested)
 
