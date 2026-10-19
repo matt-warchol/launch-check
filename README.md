@@ -76,11 +76,11 @@ These are projects from [avo42](https://avo42.com/). They show different kinds o
 
 The default research path uses accessible, attributable sources. The agent checks intent and the actual search results, then turns promising topics into page briefs. Numeric volume or difficulty appears only when a connected source supplies it. **DataForSEO can add live keyword and SERP data**, but it is optional and may have its own cost; the skill does not pretend that it is connected by default.
 
-A brief now separates **why someone searched** from **what the leading pages let them do**. For example, a query about splitting startup costs might need an explanation *and* a calculator. The agent records the inspected result URLs and formats, then recommends a page format with a reason. If it cannot inspect the results, it labels the recommendation as a hypothesis.
+A brief now separates **why someone searched** from **what the leading pages let them do**. The agent opens leading organic results, records each URL and rank, and reports the confirmed format mix alongside volume and organic keyword difficulty when those metrics are available. It then recommends a guide, comparison, calculator, tool, or no page based on the evidence and what the product can actually deliver. For example, a query about splitting startup costs might need an explanation *and* a calculator. If pages cannot be inspected, their formats stay unverified and the recommendation is a hypothesis.
 
 ![Illustrative Launch Check page brief showing intent, result formats, a recommended calculator with an explanation, and the proposed page flow](assets/serp-format-brief-example.png)
 
-<sub>Illustrative output, not a live SERP audit or measured ranking opportunity.</sub>
+<sub>Mock layout only: the pictured formats were invented to show the report shape. A real run must inspect and cite the ranked pages.</sub>
 
 For search discovery, the launch workflow checks canonicals, `robots.txt`, generated sitemaps, and Google/Bing submission when the right accounts are available. IndexNow can notify participating engines about page changes. None of these steps guarantees indexing or ranking.
 

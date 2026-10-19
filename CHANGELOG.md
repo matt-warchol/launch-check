@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.14.0 — 2026-10-19
+
+- Made SERP format recommendations depend on opened, ranked organic pages and concrete page interactions. Redirected, blocked, and snippet-only results are marked unverified rather than counted as confirmed formats.
+- Added a compact query decision table with volume, organic KD, confirmed format coverage, proposed format, and product-fit rationale. Missing metric fields remain unknown; high demand outside the product's scope can lead to `do not build`.
+- Clarified that the README image is a mock layout, not real SERP evidence.
+
 ## 1.13.0 — 2026-10-19
 
 - Added a top-result format check to SEO research and substantial page rebuild audits. Briefs now separate search intent from page format, cite inspected organic results, and explain why the proposed guide, table, calculator, template, or tool fits the visitor's task.

@@ -143,15 +143,17 @@ Use when you need search opportunities, audience questions, or page briefs befor
 $launch-check research SEO for an account-management product aimed at
 B2B agencies in [target country/language]. Keep our existing brand.
 Produce intent clusters and briefs for three useful pages. For each,
-inspect the leading results and tell me whether they are guides,
-comparison tables, calculators, templates, or tools. Recommend a page
-format and explain why, then include titles, headings, internal links,
-and calls to action.
+open the leading organic results and show their URLs, ranks, and actual
+formats (guides, comparison tables, calculators, templates, or tools).
+Give me one table with query, monthly volume, organic KD, confirmed
+result formats, proposed format, and why it fits our product. Label
+missing metrics unknown and pages you could not open unverified. Then
+include titles, headings, internal links, and calls to action.
 Use free sources. First check which research tools are available.
 Do not invent search volumes or change website files.
 ```
 
-**You get:** sourced research, a page plan with result formats and recommended page formats, and explicit data gaps. If numeric research needs an unavailable account, the agent explains the setup/export options before that work.
+**You get:** sourced research, a page plan with verified result formats and recommended page formats, and explicit data gaps. If numeric research needs an unavailable account, the agent explains the setup/export options before that work.
 
 ### 3. Audit — check an existing page or site
 

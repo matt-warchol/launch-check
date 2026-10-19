@@ -35,13 +35,17 @@ Do not use `UNVERIFIED` here for an unattempted missing prerequisite. Use `NOT R
 
 ## Research evidence
 
-| Query/cluster | Intent | Market/language | Metric or unknown | Provider/source | Period/settings | Retrieved | Confidence |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| [query] | [intent] | [market] | [range/estimate/unknown] | [URL/export] | [period/settings or unknown] | [date] | [reason] |
+**SERP and metric settings:** [search provider, country/language/device, search date; volume and KD provider, update date/period, exact or clustered keyword basis]. Organic KD is provider-specific; paid competition is not KD. A missing query or metric is `unknown`, not zero.
 
-| Observed query | Date and locale limitations | Inspected organic URLs | Formats and what each page lets users do | User need or gap | Format implication |
-| --- | --- | --- | --- | --- | --- |
-| [query] | [context] | [URLs, or snippets-only] | [guide / table / calculator / template / tool; verified or snippet-only] | [evidence] | [format to consider and why] |
+| Query | Intent | Volume/mo | Organic KD | Confirmed top-result formats (coverage) | Proposed page format | Product fit and reason |
+| --- | --- | --- | --- | --- | --- | --- |
+| [query] | [intent] | [estimate/range/unknown] | [provider score/unknown] | [format mix; e.g. 3 of 5 opened relevant results] | [format / provisional / do not build] | [visitor task and actual product capability] |
+
+| Query | Organic rank | Result URL | Inspection status | Verified page format and what users can do |
+| --- | --- | --- | --- | --- |
+| [query] | [rank if known] | [URL] | [opened / redirected / blocked / snippet-only] | [guide / table / calculator / template / tool / irrelevant; concrete evidence or unverified] |
+
+Keep ads and SERP features separate from organic ranks. Do not count blocked, redirected, snippet-only, or irrelevant results as confirmed formats. Note locale or device limits. If the SERP cannot be inspected, the proposed format is a hypothesis, not an SEO-validated finding.
 
 ## Page map and briefs
 
