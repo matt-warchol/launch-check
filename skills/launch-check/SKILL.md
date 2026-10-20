@@ -2,7 +2,7 @@
 name: launch-check
 description: Build landing pages, research SEO, audit conversion and launch readiness, or update the installed launch-check (launch-skill) from its GitHub source. Use for page/site audits, landing-page builds, authorized fixes, launches, and requests to update this skill; not for unrelated development.
 metadata:
-  version: "1.14.0"
+  version: "1.15.0"
 ---
 
 # Launch Check
@@ -35,7 +35,7 @@ Read [the landing-page checklist](references/landing-page.md) for landing-page b
 
 Include the [Is Agentic workflow](references/is-agentic.md) in public-page audits, landing-page launch verification, and requested agent-readiness checks. Use the canonical public URL, record timestamp and evidence, and distinguish a cached report from a post-release scan. Apply relevant findings within authorization; do not build nonexistent APIs to raise a score. An audit-only request does not authorize fixes or deployment.
 
-For each new public website built or launched with this skill, read [the sitemap and search-discovery module](references/sitemaps.md) and [the IndexNow module](references/indexnow.md). Include automatic change notifications by default when the site is intended for search discovery: prepare the integration during a build, then activate and verify it after an authorized production launch. Reuse working CMS/host support when present. For an existing-site audit, inspect and report IndexNow status without changing the site. Do not treat a notification as indexing or as a substitute for Google Search Console.
+For each new public website built or launched with this skill, read [the sitemap and search-discovery module](references/sitemaps.md) and [the IndexNow module](references/indexnow.md). Include automatic change notifications by default when the site is intended for search discovery: reuse working CMS/host support, or for a static/code site copy `scripts/indexnow_sitemap.py` into the project and wire it to run only after successful production deployment. Persist its sitemap state across releases; on the first launch of a new site submit the verified initial URLs once, then submit only newly published or meaningfully updated indexable pages. Keep the key in a deployment secret and verify key-file, live page, canonical, `noindex`, robots, and API response. Do not claim autopilot until the production hook runs successfully. For an existing-site audit, inspect and report IndexNow status without changing the site. Do not treat a notification as indexing or as a substitute for Google Search Console.
 
 ## Content sites and guides
 

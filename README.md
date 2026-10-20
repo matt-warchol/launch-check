@@ -27,7 +27,7 @@
 - **Research:** find audience questions, search intent, and the formats of leading pages (guide, table, calculator, tool), then map useful pages. It labels missing keyword volume instead of making up numbers.
 - **Audit:** check the message, every visible CTA, trust, footer links, accessibility, technical SEO, and AI readability. Get a short, prioritized list of fixes with evidence.
 - **Implement:** fix selected issues in the existing site without replacing a design that already works.
-- **Launch:** verify the deployed page, links, analytics when selected, sitemap, search submission where account access exists, and IndexNow for eligible new sites.
+- **Launch:** verify the deployed page, links, analytics when selected, sitemap, search submission where account access exists, and automatic IndexNow notices for eligible new or changed pages.
 
 Launch Check is **a set of instructions for your coding agent**, not a hosted audit service or a one-command CLI. It uses the repository, browser, and connected accounts you give the agent. It separates what it checked from what it could not verify.
 

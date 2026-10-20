@@ -92,9 +92,9 @@ In another Agent Skills host, use that host's skill-selection convention and the
 
 ### IndexNow for new websites
 
-For each new public, search-discoverable website, launch-check checks whether the CMS or host already supports [IndexNow](https://www.indexnow.org/faq). If not, it prepares a publish hook in the site's actual stack. Once the production launch is authorized, the hook notifies IndexNow when an eligible page is **added, meaningfully updated, or removed**. It verifies the host key, a real publish event, and the API response. Preview builds and private pages are excluded. You can opt out for a site.
+For each new public, search-discoverable website, launch-check checks whether the CMS or host already supports [IndexNow](https://www.indexnow.org/faq). For static/code sites without native support, it adds the bundled post-deploy sitemap watcher, persists its state, and connects it to the successful production deploy. It submits verified new pages and pages whose truthful sitemap `lastmod` changed. Native publish hooks should handle removals; a missing sitemap URL alone is not proof of an intentional deletion. The integration verifies the host key, live page, canonical/indexable status, and API response. Preview builds and private pages are excluded. You can opt out for a site.
 
-This is site-level automation: the skill configures it in each website; the skill itself does not run in the background. IndexNow tells participating engines that a URL changed. Acceptance does **not** mean the page was indexed, and Google still needs normal crawlable pages, a sitemap, and Search Console checks. See [the IndexNow module](../skills/launch-check/references/indexnow.md).
+This is site-level automation: the skill configures it in each website; the skill itself does not run in the background. On a brand-new site, the first production run submits the verified initial URLs once. IndexNow tells participating engines that a URL changed. Acceptance does **not** mean the page was indexed, and Google still needs normal crawlable pages, a sitemap, and Search Console checks. See [the IndexNow module](../skills/launch-check/references/indexnow.md).
 
 ### Optional Google Analytics module
 
@@ -241,6 +241,7 @@ skills/launch-check/
   references/landing-page.md  Build-to-production checklist
   references/is-agentic.md    CLI audit, freshness, fixes, verification
   references/indexnow.md      Publish hook, key, submission, verification
+  scripts/indexnow_sitemap.py Static-site post-deploy sitemap diff and IndexNow submitter
   references/sitemaps.md      Automatic sitemap generation and search-engine submission
   references/content-sites.md Guides, scheduled publishing, sources, authorship, parallel work
   scripts/update_from_github.py GitHub check/apply updater for personal installs

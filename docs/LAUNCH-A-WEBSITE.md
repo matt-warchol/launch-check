@@ -35,6 +35,7 @@ run relevant tests. Do not push or deploy until I ask.
 The agent checks only capabilities needed for this scope. Keyword metrics, new domain research, or a full application audit are not automatic requirements for a landing page. Missing credentials block only their dependent actions.
 
 For a new public site intended for search discovery, the agent also prepares [IndexNow automatic notifications](../skills/launch-check/references/indexnow.md) in its actual CMS or deployment flow. They stay inactive on previews.
+For static sites without native support, that includes a post-deploy sitemap diff and persistent state. The first production deployment submits verified initial URLs once; later successful deployments submit only new or truthfully `lastmod`-updated pages.
 
 ## 3. Review the page and checklist
 
@@ -54,8 +55,9 @@ fix applicable issues within the agreed landing-page scope.
 Set up Google Analytics in [account/property] if selected; install
 page-view and primary-action tracking and verify receipt. For a new
 property use [time zone] and [currency].
-Enable IndexNow for this public site and verify that a later new or
-updated page sends a notification automatically.
+Enable IndexNow for this public site. Submit the verified initial URLs
+after the first production deploy, then verify that a later new or
+meaningfully updated page sends a notification automatically.
 ```
 
 Existing authorization does not need to be repeated. If the registrar or account requires your action, the agent should give the exact pending setup and continue independent work. A DNS record alone does not prove a working certificate or correct production site.

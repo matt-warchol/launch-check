@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.15.0 — 2026-10-20
+
+- Added a standard-library post-deploy IndexNow script for static/code sites. It diffs public sitemap URLs and truthful `lastmod`, verifies changed pages are live, canonical and indexable, verifies the public key file, and posts eligible URLs in protocol-sized batches.
+- Added persistent-state, first-launch, GitHub Actions, secret-handling, and production-only setup guidance. The initial run seeds a baseline unless `--submit-initial` is selected.
+- Corrected IndexNow key guidance to use a random hexadecimal key and clarified that accepted submission means received, not indexed.
+
 ## 1.14.0 — 2026-10-19
 
 - Made SERP format recommendations depend on opened, ranked organic pages and concrete page interactions. Redirected, blocked, and snippet-only results are marked unverified rather than counted as confirmed formats.
